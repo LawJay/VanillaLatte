@@ -1,4 +1,7 @@
 section.movieList {
   display: flex;
+  flex-direction: row;
+  flex-flow: 1%;
+  flex-basis: 15%:
 
 }

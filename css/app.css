@@ -4,7 +4,10 @@ section.movieList {
   flex-flow: 1%;
   flex-basis: 15%;
   padding:10px;
+
+}
+
+img.temp {
   height: 100px;
   width: 100px;
-
 }

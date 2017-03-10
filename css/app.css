@@ -6,21 +6,12 @@
 
 
 div.movieList {
-  display: flex;
-  flex-direction: row;
-  flex-flow: 1%;
-  flex-basis: 15%;
   padding:10px;
   border: black;
-  flex-wrap:wrap;
+  }
 }
 
 div.movieInfo {
-  display: flex;
-  flex-direction: row;
-  flex-flow: 1%;
-  flex-wrap:wrap;
-  flex-basis: 15%;
   padding:10px;
   border: black;
   float:right;

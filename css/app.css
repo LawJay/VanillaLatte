@@ -21,6 +21,7 @@ div.movieInfo {
   flex-basis: 15%;
   padding:10px;
   border: black;
+  float:right;
 }
 
 img.temp {

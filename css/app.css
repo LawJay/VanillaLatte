@@ -15,10 +15,6 @@ div.movieList {
 }
 
 div.movieInfo {
-  display: flex;
-  flex-direction: row;
-  flex-flow: 1%;
-  flex-basis: 15%;
   padding:10px;
   border: black;
 }

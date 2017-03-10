@@ -1,3 +1,10 @@
+/**
+* @Date:   2017-03-10T15:05:05+00:00
+* @Last modified time: 2017-03-10T15:11:38+00:00
+*/
+
+
+
 section.movieList {
   display: flex;
   flex-direction: row;
@@ -8,6 +15,7 @@ section.movieList {
 }
 
 img.temp {
+  float: right;
   height: 305px;
   width: 305px;
   margin-left: 5px;

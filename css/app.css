@@ -5,7 +5,7 @@
 
 
 
-section.movieList {
+div.movieList {
   display: flex;
   flex-direction: row;
   flex-flow: 1%;

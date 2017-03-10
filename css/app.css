@@ -8,12 +8,11 @@ section.movieList {
 }
 
 img.temp {
-  height: 405px;
-  width: 405px;
+  height: 305px;
+  width: 305px;
   margin-left: 5px;
   margin-right: 5px;
 }
 h1.Title {
-  margin-left: 15em;
-  margin-right: 15em;
+align-self: center;
 }

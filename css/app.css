@@ -58,11 +58,9 @@ div.bottompage {
   flex-wrap: wrap;
 }
 
-
-.media {
-  float:left;
-}
-
-.movieReviews {
-  float:left;
-}
+@media screen and (max-width: 768px) {
+  div.movieList {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }

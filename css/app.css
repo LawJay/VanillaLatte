@@ -7,6 +7,14 @@ body {
     text-align: center;
   }
 
+.SearchBar{
+  position: absolute;
+  top: 355px;
+  left: 575px;
+  height: 30px;
+  width: 50px;
+}
+
 div.movieList {
   display:flex;
   flex-direction:row;

@@ -2,6 +2,9 @@ div.movieList {
   display:flex;
   flex-direction:row;
   flex-grow: 2;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
 }
 
 div.movieInfo {

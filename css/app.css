@@ -17,8 +17,11 @@ main {
 header {
   margin-left: 50px;
   margin-right: 50px;
-  float:left;
 
+}
+
+input.search {
+  float:right;
 }
 
 div.mainMovie {

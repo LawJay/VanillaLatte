@@ -61,6 +61,6 @@ div.bottompage {
 @media screen and (max-width: 768px) {
   div.movieList {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap:wrap;
   }

@@ -47,6 +47,9 @@ p.movieTxt {
   float:left;
 
 }
+.header {
+  float:left;
+}
 @media only screen and (max-width: 768px) {
   p.movieTxt {
     margin-right: 35%;

@@ -23,7 +23,6 @@ img.mainMovieImg {
 }
 
 p.movieTxt {
-  margin-right: 20%;
-  margin-left: 20%;
+  margin: 5%;
   word-wrap: normal;
 }

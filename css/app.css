@@ -4,6 +4,10 @@ div.movieList {
   flex-wrap:wrap;
 }
 
+div.movieInfo {
+  float:right;
+}
+
 img.movieimg {
   width: 100px;
   height: 100px;
@@ -16,4 +20,5 @@ img.mainMovieImg {
   width:300px;
   height:300px;
   margin:auto;
+  float:left;
 }

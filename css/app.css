@@ -58,8 +58,13 @@ p.movieTxt {
     margin-left: 1%;
     word-wrap: normal;
     float:left;
-    width:50%;
+  }
+  div.moveList {
+    width:200px;
+    height:200px;
+  }
 }
+
 .media {
   float:left;
 }

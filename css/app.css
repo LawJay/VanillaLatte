@@ -5,7 +5,7 @@ div.movieList {
 }
 
 div.movieInfo {
-float:right;
+
 }
 
 img.movieimg {
@@ -26,4 +26,5 @@ img.mainMovieImg {
 p.movieTxt {
   margin-right: 35%;
   word-wrap: normal;
+  float:right;
 }

@@ -2,3 +2,10 @@ div.movieList {
   display:flex;
   flex-direction:row;
 }
+
+img.movieimg {
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+  
+}

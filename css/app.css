@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+body {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    text-align: center;
+  }
+
 div.movieList {
   display:flex;
   flex-direction:row;

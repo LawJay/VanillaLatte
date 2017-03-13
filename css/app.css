@@ -44,7 +44,7 @@ p.movieTxt {
   margin-right: 35%;
   margin-left: 3%;
   word-wrap: normal;
-  float:right;
+  float:left;
 
 }
 @media only screen and (max-width: 768px) {
@@ -55,10 +55,10 @@ p.movieTxt {
     float:left;
     width:50%;
 }
-div.media {
+.media {
   float:left;
 }
 
-div.movieReviews {
+.movieReviews {
   float:left;
 }

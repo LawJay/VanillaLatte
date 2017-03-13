@@ -5,7 +5,7 @@ div.movieList {
 }
 
 div.movieInfo {
-  float:right;
+
 }
 
 img.movieimg {
@@ -20,5 +20,4 @@ img.mainMovieImg {
   width:300px;
   height:300px;
   margin:auto;
-  float:left;
 }

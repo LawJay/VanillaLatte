@@ -1,6 +1,7 @@
 div.movieList {
   display:flex;
   flex-direction:row;
+  flex-wrap:wrap;
 }
 
 img.movieimg {
@@ -9,4 +10,10 @@ img.movieimg {
   margin-left: 5px;
   margin-right: 5px;
 
+}
+
+img.mainMovieImg {
+  width:300px;
+  height:300px;
+  margin:auto;
 }

@@ -26,7 +26,8 @@ input.search {
 
 div.mainMovie {
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
+  flex-wrap: wrap-reverse;
 }
 
 img.movieimg {
@@ -50,6 +51,12 @@ p.movieTxt {
   word-wrap: normal;
   float:left;
 
+}
+
+div.bottompage {
+  display: : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 

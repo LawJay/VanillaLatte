@@ -21,3 +21,8 @@ img.mainMovieImg {
   height:300px;
   margin:auto;
 }
+
+p.moveTxt {
+  margin: 5%;
+  word-wrap: normal;
+}

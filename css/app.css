@@ -55,3 +55,10 @@ p.movieTxt {
     float:left;
     width:50%;
 }
+div.media {
+  float:left;
+}
+
+div.moveReviews {
+  float:left;
+}

@@ -42,7 +42,7 @@ img.mainMovieImg {
 
 p.movieTxt {
   margin-right: 35%;
-  margin-left: 5%;
+  margin-left: 3%;
   word-wrap: normal;
   float:right;
 
@@ -50,7 +50,7 @@ p.movieTxt {
 @media only screen and (max-width: 768px) {
   p.movieTxt {
     margin-right: 35%;
-    margin-left: 5%;
+    margin-left: 1%;
     word-wrap: normal;
     float:left;
     width:50%;

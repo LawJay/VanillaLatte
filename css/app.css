@@ -34,9 +34,10 @@ p.movieTxt {
   float:right;
 
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
   p.movieTxt {
-    margin-right: 15%;
+    margin-right: 35%;
     word-wrap: normal;
     float:left;
+    width:50%;
 }

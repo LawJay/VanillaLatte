@@ -52,18 +52,6 @@ p.movieTxt {
 
 }
 
-@media only screen and (max-width: 768px) {
-  p.movieTxt {
-    margin-right: 35%;
-    margin-left: 1%;
-    word-wrap: normal;
-    float:left;
-  }
-  div.moveList {
-    width:200px;
-    height:200px;
-  }
-}
 
 .media {
   float:left;

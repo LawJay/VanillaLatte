@@ -27,7 +27,6 @@ input.search {
 div.mainMovie {
   display:flex;
   flex-direction:row;
-  flex-wrap: wrap-reverse;
 }
 
 img.movieimg {

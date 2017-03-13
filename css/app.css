@@ -8,15 +8,16 @@ div.movieInfo {
 
 }
 main {
-  margin-left:300px;
-  margin-right: 300px;
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
 header {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 
 div.mainMovie {
@@ -41,6 +42,7 @@ img.mainMovieImg {
 
 p.movieTxt {
   margin-right: 35%;
+  margin-left: 5%;
   word-wrap: normal;
   float:right;
 
@@ -48,7 +50,8 @@ p.movieTxt {
 @media only screen and (max-width: 768px) {
   p.movieTxt {
     margin-right: 35%;
+    margin-left: 5%;
     word-wrap: normal;
-    float:left;
+    float:right;
     width:50%;
 }

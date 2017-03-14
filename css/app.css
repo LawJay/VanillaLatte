@@ -20,17 +20,17 @@ div.movieInfo {
 
 }
 main {
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-left: 50%;
+  margin-right:50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 
 
 input.search {
-  margin-left: 25%;
-  margin-right:25%;
+  margin-left: 20%;
+  margin-right:20%;
   height: 50px;
   width: 350px;
 }
@@ -79,8 +79,8 @@ div.bottompage {
   }
 
   input.search {
-    margin-left:25%;
-    margin-right:25%;
+    margin-left:5%;
+    margin-right:5%;
   }
 
   }

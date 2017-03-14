@@ -29,7 +29,7 @@ main {
 
 
 input.search {
-  margin-left: 550px;
+  margin-left: 650px;
   margin-right:550px;
   height: 50px;
   width: 350px;
@@ -58,6 +58,7 @@ img.mainMovieImg {
 p.movieTxt {
   margin-right: 35%;
   margin-left: 3%;
+  width:100%;
   word-wrap: normal;
   float:left;
 
@@ -67,6 +68,7 @@ div.bottompage {
   display: : flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width:100%;
 }
 
 @media screen and (max-width: 768px) {

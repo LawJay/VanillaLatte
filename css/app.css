@@ -29,8 +29,8 @@ main {
 
 
 input.search {
-  margin-left: 50%;
-  margin-right:50%;
+  margin-left: 25%;
+  margin-right:25%;
   height: 50px;
   width: 350px;
 }

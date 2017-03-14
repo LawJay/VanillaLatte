@@ -7,6 +7,7 @@ body {
     text-align: center;
   }
 
+<<<<<<< HEAD
   h1 {
       font-family: 'Indie Flower', cursive;
       font-weight: 700;
@@ -20,6 +21,8 @@ body {
   height: 30px;
   width: 50px;
 }
+=======
+>>>>>>> 9493ffb37b5a6e34665a6e1fa33230fb99d25c6d
 
 div.movieList {
   display:flex;
@@ -29,24 +32,20 @@ div.movieList {
   width: 100%;
 }
 
-div.movieInfo {
-
-}
 main {
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-header {
-  margin-left: 50px;
-  margin-right: 50px;
 
-}
 
 input.search {
-  float:right;
+  margin-left: 37%;
+  margin-right:15%;
+  height: 50px;
+  width: 350px;
 }
 
 div.mainMovie {
@@ -72,6 +71,7 @@ img.mainMovieImg {
 p.movieTxt {
   margin-right: 35%;
   margin-left: 3%;
+  width:100%;
   word-wrap: normal;
   float:left;
 
@@ -79,8 +79,9 @@ p.movieTxt {
 
 div.bottompage {
   display: : flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  width:100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,4 +89,11 @@ div.bottompage {
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
+  }
+
+  input.search {
+    margin-left:5%;
+    margin-right:5%;
+  }
+
   }

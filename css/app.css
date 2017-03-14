@@ -7,13 +7,6 @@ body {
     text-align: center;
   }
 
-.SearchBar{
-  position: absolute;
-  top: 355px;
-  left: 575px;
-  height: 30px;
-  width: 50px;
-}
 
 div.movieList {
   display:flex;
@@ -41,6 +34,11 @@ header {
 
 input.search {
   float:right;
+  position: absolute;
+  top: 355px;
+  left: 575px;
+  height: 30px;
+  width: 50px;
 }
 
 div.mainMovie {
@@ -83,10 +81,5 @@ div.bottompage {
     flex-direction:column;
     flex-wrap:wrap;
   }
-  main {
-      margin-left: 150px;
-      margin-right: 150px;
-      margin-top: 25px;
-      margin-bottom: 25px;
-  }
+
   }

@@ -7,21 +7,6 @@ body {
     text-align: center;
   }
 
-<<<<<<< HEAD
-  h1 {
-      font-family: 'Indie Flower', cursive;
-      font-weight: 700;
-      text-align: center;
-    }
-
-.SearchBar{
-  top: 355px;
-  left: 575px;
-  height: 30px;
-  width: 50px;
-}
-=======
->>>>>>> 9493ffb37b5a6e34665a6e1fa33230fb99d25c6d
 
 div.movieList {
   display:flex;

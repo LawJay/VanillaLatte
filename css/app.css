@@ -29,8 +29,8 @@ main {
 
 
 input.search {
-  margin-left: 775px;
-  margin-right:550px;
+  margin-left: 50%;
+  margin-right:50%;
   height: 50px;
   width: 350px;
 }
@@ -76,6 +76,11 @@ div.bottompage {
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
+  }
+
+  input.search {
+    margin-left:25%;
+    margin-right:25%;
   }
 
   }

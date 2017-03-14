@@ -83,3 +83,10 @@ div.bottompage {
     flex-direction:column;
     flex-wrap:wrap;
   }
+  main {
+      margin-left: 250px;
+      margin-right: 250px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  }

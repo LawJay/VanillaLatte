@@ -29,8 +29,10 @@ main {
 
 
 input.search {
+  margin-left: 250px
+  margin-right:250px
   height: 50px;
-  width: 150px;
+  width: 350px;
 }
 
 div.mainMovie {

@@ -54,7 +54,7 @@ img.mainMovieImg {
 }
 
 p.movieTxt {
-  margin-right: 35%;
+  margin-right: 5%;
   margin-left: 3%;
   width:100%;
   word-wrap: normal;
@@ -72,7 +72,7 @@ div.bottompage {
 @media screen and (max-width: 768px) {
   div.movieList {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap:wrap;
   }
 

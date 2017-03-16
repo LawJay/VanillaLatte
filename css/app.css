@@ -33,10 +33,11 @@ div.castDiv {
 }
 div.mediaDiv {
   margin-left:25%;
+  width:25%
 
 }
 div.reviewDiv {
-  float: right;
+  margin-left:25%;
 }
 
 input.search {

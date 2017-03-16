@@ -42,7 +42,7 @@ div.mediaDiv {
 
 }
 div.reviewDiv {
-  margin-left:25%;
+  float:left;
 }
 
 input.search {

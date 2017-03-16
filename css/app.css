@@ -23,14 +23,19 @@ main {
   margin-top: 10%;
   margin-bottom: 10%;
 }
+div.bottompage {
+  width:100%;
+}
 
-castDiv{
+div.castDiv {
   float: left;
+  width:25%
 }
-mediaDiv{
+div.mediaDiv {
+  margin-left:25%;
 
 }
-reviewDiv{
+div.reviewDiv {
   float: right;
 }
 
@@ -75,6 +80,7 @@ div.movieReviews {
   float:right;
 
 }
+
 
 @media screen and (max-width: 768px) {
   div.movieList {

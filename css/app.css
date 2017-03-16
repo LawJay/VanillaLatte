@@ -76,13 +76,6 @@ p.movieTxt {
 
 }
 
-
-div.movieReviews {
-  float:right;
-
-}
-
-
 @media screen and (max-width: 768px) {
   div.movieList {
     display:flex;

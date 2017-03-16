@@ -65,7 +65,6 @@ img.movieimg {
   border-color: #000026;
   border-width: medium;
   border-style: solid;
-
 }
 
 img.mainMovieImg {
@@ -73,6 +72,9 @@ img.mainMovieImg {
   height:300px;
   margin:auto;
   float:left;
+  border-color: #D4AF37;
+  border-width: medium;
+  border-style: solid;
 }
 
 p.movieTxt {

@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
+html {
+  background: url(Media/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
     font-family: 'Indie Flower', cursive;
     font-weight: 700;
     text-align: center;
-    background-image: url("Media/background.jpg");
-  }
+      }
 
 
 div.movieList {
@@ -33,11 +38,10 @@ div.castDiv {
 }
 div.mediaDiv {
   margin-left:25%;
-  width:25%
 
 }
 div.reviewDiv {
-  margin-left:25%;
+  float: right;
 }
 
 input.search {

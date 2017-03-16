@@ -70,12 +70,6 @@ p.movieTxt {
 
 }
 
-div.bottompage {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width:100%;
-}
 
 div.movieReviews {
   float:right;

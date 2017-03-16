@@ -102,16 +102,19 @@ p.movieTxt {
     width:25%;
     margin-right: 5%;
     margin-left: 5%;
+    float:none;
   }
   div.mediaDiv {
     width:25%;
     margin-right: 5%;
     margin-left: 5%;
+    float:none;
 
   }
   div.reviewDiv {
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 0%;
+    float:none;
   }
 
   }

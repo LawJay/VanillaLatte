@@ -100,20 +100,20 @@ p.movieTxt {
   }
   div.castDiv {
     width:25%;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
     float:none;
   }
   div.mediaDiv {
     width:25%;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
     float:none;
 
   }
   div.reviewDiv {
-    margin-right: 5%;
-    margin-left: 0%;
+    margin-right: auto;
+    margin-left: auto;
     float:none;
   }
 

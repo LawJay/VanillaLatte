@@ -87,7 +87,7 @@ p.movieTxt {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   div.movieList {
     display:flex;
     flex-direction:row;
@@ -97,6 +97,21 @@ p.movieTxt {
   input.search {
     margin-left:12%;
     margin-right:5%;
+  }
+  div.castDiv {
+    width:25%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  div.mediaDiv {
+    width:25%;
+    margin-right: 5%;
+    margin-left: 5%;
+
+  }
+  div.reviewDiv {
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   }

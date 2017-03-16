@@ -31,18 +31,24 @@ div.castDiv {
   width:25%;
   margin-right: 5%;
   margin-left: 5%;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
 }
 div.mediaDiv {
   width:25%;
   float:left;
   margin-right: 5%;
   margin-left: 5%;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
 
 }
 div.reviewDiv {
   float:left;
   margin-right: 5%;
   margin-left: 5%;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
 }
 
 input.search {

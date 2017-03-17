@@ -10,14 +10,9 @@ body {
 
 div.movieList {
   width: 100%;
-<<<<<<< HEAD
-  height: auto;
-  overflow:hidden;
-=======
   height: 320px;
   overflow:scroll;
   white-space: nowrap;
->>>>>>> 64424bb77060f778e58338be8d88e7ba65f989d5
   display:flex;
   flex-direction: row;
 }
@@ -121,3 +116,13 @@ p.movieTxt {
   }
 
   }
+  @media screen and (max-width: 1280px) {
+  p.movieTxt {
+    margin-right: 3%;
+    margin-left: 3%;
+    width:100%;
+    word-wrap: normal;
+    float:left;
+
+  }
+}

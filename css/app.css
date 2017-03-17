@@ -1,128 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-body {
-    font-family: 'Indie Flower', cursive;
-    font-weight: 700;
-    text-align: center;
-    background-color: #970919;
-    color:#928C9A;
-}
+/**
+* @Date:   2017-03-10T15:05:05+00:00
+* @Last modified time: 2017-03-17T14:08:54+00:00
+*/
+
 
 
 div.movieList {
-  width: 100%;
-  height: 320px;
-  overflow:scroll;
-  white-space: nowrap;
-  display:flex;
+  display: flex;
   flex-direction: row;
+  flex-flow: 1%;
+  flex-basis: 15%;
+  padding:10px;
+  border: black;
+  height: auto;
+  max-width: 100%;
 }
 
-main {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-div.bottompage {
-  width:100%;
-}
-h2.movieTitle {
-  float:left;
+div.movieInfo {
+  padding:10px;
+  border: black;
 }
 
-div.castDiv {
-  float: left;
-  width:25%;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-div.mediaDiv {
-  width:25%;
-  float:left;
-  margin-right: 5%;
-  margin-left: 5%;
-
-}
-div.reviewDiv {
-  float:left;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-input.search {
-  margin-left: 37.4%;
-  margin-right:15%;
-  height: 50px;
-  width: 350px;
-}
-
-div.mainMovie {
-  display:flex;
-  flex-direction:row;
-}
-
-img.movieimg {
-  width: 300px;
-  height: 300px;
+img.temp {
+  float: right;
+  height: 305px;
+  width: 305px;
   margin-left: 5px;
   margin-right: 5px;
-  border-color: #000026;
-  border-width: medium;
-  border-style: solid;
 }
-
-img.mainMovieImg {
-  width:300px;
-  height:300px;
-  margin:auto;
-  float:left;
-  border-color: #D4AF37;
-  border-width: thick;
-  border-style: solid;
-}
-
-p.movieTxt {
-  margin-right: 3%;
-  margin-left: 3%;
-  width:100%;
-  word-wrap: normal;
-  float:left;
-
-}
-
-@media screen and (max-width: 900px) {
-
-  input.search {
-    margin-left:12%;
-    margin-right:5%;
-  }
-  div.castDiv {
-    width:25%;
-    margin-right: 0%;
-    margin-left: 0%;
-    float:none;
-  }
-  div.mediaDiv {
-    width:25%;
-    margin-right: 0%;
-    margin-left: 0%;
-    float:none;
-
-  }
-  div.reviewDiv {
-    margin-right: 0%;
-    margin-left: 0%;
-    float:none;
-  }
-
-  }
-  @media screen and (max-width: 1280px) {
-  p.movieTxt {
-    margin-right: 3%;
-    margin-left: 3%;
-    width:100%;
-    word-wrap: normal;
-    float:left;
-
-  }
+h1.Title {
+align-self: center;
 }

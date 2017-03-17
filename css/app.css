@@ -6,7 +6,20 @@
 
 
 div.movieList {
+<<<<<<< HEAD
   display: flex;
+=======
+  width: 100%;
+<<<<<<< HEAD
+  height: auto;
+  overflow:hidden;
+=======
+  height: 320px;
+  overflow:scroll;
+  white-space: nowrap;
+>>>>>>> 64424bb77060f778e58338be8d88e7ba65f989d5
+  display:flex;
+>>>>>>> origin/master
   flex-direction: row;
   flex-flow: 1%;
   flex-basis: 15%;
@@ -14,9 +27,49 @@ div.movieList {
   border: black;
 }
 
+<<<<<<< HEAD
 div.movieInfo {
   padding:10px;
   border: black;
+=======
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+div.bottompage {
+  width:100%;
+}
+h2.movieTitle {
+  float:left;
+}
+
+div.castDiv {
+  float: left;
+  width:25%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+div.mediaDiv {
+  width:25%;
+  float:left;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+div.reviewDiv {
+  float:left;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+input.search {
+  margin-left: 37.4%;
+  margin-right:15%;
+  height: 50px;
+  width: 350px;
+>>>>>>> origin/master
 }
 
 img.temp {

@@ -26,6 +26,9 @@ main {
 div.bottompage {
   width:100%;
 }
+h2.movieTitle {
+  float:left;
+}
 
 div.castDiv {
   float: left;

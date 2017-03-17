@@ -9,9 +9,9 @@ body {
 
 
 div.movieList {
-  height: 300%;
+  height: 100%;
   overflow: scroll;
-  width: 300%;
+  width: 100%;
 }
 
 main {

@@ -1,32 +1,22 @@
-/**
-* @Date:   2017-03-10T15:05:05+00:00
-* @Last modified time: 2017-03-10T15:11:38+00:00
-*/
-
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    text-align: center;
+    background-color: #970919;
+    color:#928C9A;
+}
 
 
 div.movieList {
-<<<<<<< HEAD
-  display: flex;
-=======
   width: 100%;
   height: 320px;
   overflow:scroll;
   white-space: nowrap;
   display:flex;
->>>>>>> origin/master
   flex-direction: row;
-  flex-flow: 1%;
-  flex-basis: 15%;
-  padding:10px;
-  border: black;
 }
 
-<<<<<<< HEAD
-div.movieInfo {
-  padding:10px;
-  border: black;
-=======
 main {
   margin-left: 5%;
   margin-right: 5%;
@@ -64,20 +54,32 @@ input.search {
   margin-right:15%;
   height: 50px;
   width: 350px;
->>>>>>> origin/master
 }
 
-img.temp {
-  float: right;
-  height: 305px;
-  width: 305px;
+div.mainMovie {
+  display:flex;
+  flex-direction:row;
+}
+
+img.movieimg {
+  width: 300px;
+  height: 300px;
   margin-left: 5px;
   margin-right: 5px;
+  border-color: #000026;
+  border-width: medium;
+  border-style: solid;
 }
-<<<<<<< HEAD
-h1.Title {
-align-self: center;
-=======
+
+img.mainMovieImg {
+  width:300px;
+  height:300px;
+  margin:auto;
+  float:left;
+  border-color: #D4AF37;
+  border-width: thick;
+  border-style: solid;
+}
 
 p.movieTxt {
   margin-right: 3%;
@@ -86,10 +88,7 @@ p.movieTxt {
   word-wrap: normal;
   float:left;
 
->>>>>>> origin/master
 }
-<<<<<<< HEAD
-=======
 
 @media screen and (max-width: 900px) {
 
@@ -127,4 +126,3 @@ p.movieTxt {
 
   }
 }
->>>>>>> origin/master

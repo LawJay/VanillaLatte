@@ -74,8 +74,19 @@ img.temp {
   margin-left: 5px;
   margin-right: 5px;
 }
+<<<<<<< HEAD
 h1.Title {
 align-self: center;
+=======
+
+p.movieTxt {
+  margin-right: 3%;
+  margin-left: 3%;
+  width:100%;
+  word-wrap: normal;
+  float:left;
+
+>>>>>>> origin/master
 }
 <<<<<<< HEAD
 =======

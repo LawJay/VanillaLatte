@@ -9,10 +9,8 @@ body {
 
 
 div.movieList {
-  display:flex;
-  flex-direction:row;
-  flex-grow: 2;
-  flex-wrap: wrap;
+  height: 100%
+  overflow: scroll;
   width: 100%;
 }
 
@@ -31,24 +29,18 @@ div.castDiv {
   width:25%;
   margin-right: 5%;
   margin-left: 5%;
-  font-family: 'Indie Flower', cursive;
-  font-weight: 700;
 }
 div.mediaDiv {
   width:25%;
   float:left;
   margin-right: 5%;
   margin-left: 5%;
-  font-family: 'Indie Flower', cursive;
-  font-weight: 700;
 
 }
 div.reviewDiv {
   float:left;
   margin-right: 5%;
   margin-left: 5%;
-  font-family: 'Indie Flower', cursive;
-  font-weight: 700;
 }
 
 input.search {
@@ -64,8 +56,8 @@ div.mainMovie {
 }
 
 img.movieimg {
-  width: 220px;
-  height: 275px;
+  width: 100px;
+  height: 100px;
   margin-left: 5px;
   margin-right: 5px;
   border-color: #000026;

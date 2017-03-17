@@ -10,7 +10,7 @@ body {
 
 div.movieList {
   width: 100%;
-  height: 330px;
+  height: 315px;
   overflow:scroll;
   white-space: nowrap;
   display:flex;

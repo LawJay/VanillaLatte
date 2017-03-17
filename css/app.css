@@ -41,21 +41,21 @@ h2.movieTitle {
 div.castDiv {
   float: left;
   width:25%;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 div.mediaDiv {
   width:25%;
   float:left;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
 
 }
 div.reviewDiv {
   width: 25%;
   float:left;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 input.search {

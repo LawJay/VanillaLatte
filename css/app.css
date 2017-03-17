@@ -92,8 +92,8 @@ img.movieimg {
 }
 
 img.mainMovieImg {
-  width:300px;
-  height:300px;
+  width:50%;
+  height:50%;
   margin:auto;
   float:left;
   border-color: #D4AF37;

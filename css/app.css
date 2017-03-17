@@ -88,12 +88,12 @@ img.movieimg {
   border-color: #000026;
   border-width: medium;
   border-style: solid;
-  
+
 }
 
 img.mainMovieImg {
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
   margin:auto;
   float:left;
   border-color: #D4AF37;

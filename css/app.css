@@ -34,8 +34,24 @@ main {
 div.bottompage {
   width:100%;
 }
+
+div.mainMovie {
+  width:100%;
+}
+
+
 h2.movieTitle {
   float:left;
+  width:50%;
+}
+
+p.movieTxt {
+  margin-right: 3%;
+  margin-left: 3%;
+  width:50%;
+  word-wrap: normal;
+  float:left;
+
 }
 
 div.castDiv {
@@ -64,11 +80,6 @@ input.search {
   width: 350px;
 }
 
-div.mainMovie {
-  display:flex;
-  flex-direction:row;
-}
-
 img.movieimg {
   width: auto;
   height: 100%;
@@ -87,15 +98,6 @@ img.mainMovieImg {
   border-color: #D4AF37;
   border-width: thick;
   border-style: solid;
-}
-
-p.movieTxt {
-  margin-right: 3%;
-  margin-left: 3%;
-  width:100%;
-  word-wrap: normal;
-  float:left;
-
 }
 
 @media screen and (max-width: 900px) {

@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-03-10T15:21:14+00:00
+@Last modified time: 2017-03-17T16:45:35+00:00
 -->
 
 
@@ -15,9 +15,30 @@
   This is part of mobile first design">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <script src="js/vendor/jquery.js"></script>
+    <!--<script src="js/vendor/jquery.js"></script>-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/what-input.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.movieimg').click(function(){
+      var currentimage = $(this).attr('src');
+        $('#mainImg').attr('src', currentimage);
+      });
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $('.movieimg').hover(function(){
+      $(this).css('border-color', '#D4AF37');
+    }, function(){
+      $(this).css('border-color', '#000026')
+    });
+    });
+    </script>
+
+    </script>
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
 </head>
@@ -52,7 +73,7 @@
                 <div class="row">
 
                     <div class="mainMovie large-8 small-3 medium-5">
-                        <img src="img/cat.png" alt="img" class="mainMovieImg">
+                        <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
                         <h2 class="movieTitle"> Movie title </h2>
                         <P class="movieTxt"> This is information about a movie. This move is rated 50 stars out of 42, with 6 perfect scores. This move released in 20,000BC.</p>
 

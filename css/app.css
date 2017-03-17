@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
-* @Last modified time: 2017-03-17T15:09:39+00:00
+* @Last modified time: 2017-03-17T16:34:09+00:00
 */
 
 
@@ -80,8 +80,8 @@ img.movieimg {
 }
 
 img.mainMovieImg {
-  width:300px;
-  height:300px;
+  width: 50%;
+  height: 50%;
   margin:auto;
   float:left;
   border-color: #D4AF37;

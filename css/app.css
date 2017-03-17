@@ -12,7 +12,6 @@ div.movieList {
   width: 100%;
   height: 320px;
   overflow:scroll;
-  overflow-y: hidden;
   white-space: nowrap;
   display:flex;
   flex-direction: row;
@@ -63,8 +62,8 @@ div.mainMovie {
 }
 
 img.movieimg {
-  width: auto;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   margin-left: 5px;
   margin-right: 5px;
   border-color: #000026;
@@ -111,9 +110,11 @@ p.movieTxt {
 
   }
   div.reviewDiv {
+    width:25%;
     margin-right: 0%;
     margin-left: 0%;
     float:none;
+
   }
 
   }

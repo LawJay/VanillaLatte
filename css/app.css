@@ -59,8 +59,7 @@ div.reviewDiv {
 }
 
 input.search {
-  margin-left: 37.4%;
-  margin-right:15%;
+  margin:0 auto;
   height: 50px;
   width: 350px;
 }

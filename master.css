@@ -8,6 +8,14 @@ body {
     ali
 }
 
+.SearchBar{
+  position: absolute;
+  top: 355px;
+  left: 575px;
+  height: 30px;
+  width: 50px;
+}
+
 #nav{
     background-color: #00303f;;
     color: #ffffff;

@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
-* @Last modified time: 2017-03-17T17:04:10+00:00
+* @Last modified time: 2017-03-22T09:45:44+00:00
 */
 
 
@@ -100,6 +100,29 @@ img.mainMovieImg {
   border-width: thick;
   border-style: solid;
 }
+@media only screen and (min-width: 500px) /*phone size*/{
+  img.mainMovieImg{
+    width: 50%;
+    height: 50%;
+    margin:auto;
+    float:left;
+    border-color: #D4AF37;
+    border-width: thick;
+    border-style: solid;
+  }
+}
+@media only screen and (min-width: 600px) /*phone size*/{
+  img.mainMovieImg{
+    width: 30%;
+    height: 50%;
+    margin:auto;
+    float:left;
+    border-color: #D4AF37;
+    border-width: thick;
+    border-style: solid;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
   div.castDiv {

@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
-* @Last modified time: 2017-03-22T11:31:16+00:00
+* @Last modified time: 2017-03-22T11:41:21+00:00
 */
 
 
@@ -90,8 +90,8 @@ img.movieimg {
   border-style: solid;
 }
 
-@media only screen and (min-width:901px) /*desktop size*/{
-  img.mainMovieImg {
+@media screen and (min-width:901px) /*desktop size*/{
+  img.mainmovieImg {
   width: 55%;
   max-height: 55%;
   margin:auto;
@@ -101,8 +101,8 @@ img.movieimg {
   border-style: solid;
   }
 }
-@media only screen and (max-width:490px) /*phone size*/{
-  img.mainMovieImg{
+@media screen and (max-width:490px) /*phone size*/{
+  img.mainmovieImg{
     width: 20%;
     max-height:20%;
     margin:auto;
@@ -113,8 +113,8 @@ img.movieimg {
   }
 }
 
-@media only screen and (min-width:491px) and (max-width:900px) /*tablet size*/{
-  img.mainMovieImg{
+@media screen and (min-width:491px) and (max-width:900px) /*tablet size*/{
+  img.mainmovieImg{
     width: 40%;
     height: 40%;
     margin:auto;

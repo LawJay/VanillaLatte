@@ -10,7 +10,8 @@ body {
     font-family: 'Indie Flower', cursive;
     font-weight: 700;
     text-align: center;
-    background-color: #970919;
+    background: url(https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat center;
+  	background-size: cover;
     color:#928C9A;
 }
 

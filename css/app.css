@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
-* @Last modified time: 2017-03-22T11:53:46+00:00
+* @Last modified time: 2017-03-22T09:45:44+00:00
 */
 
 
@@ -10,8 +10,7 @@ body {
     font-family: 'Indie Flower', cursive;
     font-weight: 700;
     text-align: center;
-    background: url(https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat center;
-  	background-size: cover;
+    background-color: #970919;
     color:#928C9A;
 }
 
@@ -32,8 +31,31 @@ main {
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
 div.bottompage {
   width:100%;
+}
+
+.landscape-img {
+  position: relative;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+.landscape-img h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*width: 100%;*/
+}
+
+.landscape-img h1 span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
 }
 
 div.mainMovie {
@@ -89,35 +111,22 @@ img.movieimg {
   border-color: #000026;
   border-width: medium;
   border-style: solid;
+
 }
 
-@media screen and (min-width:901px) /*desktop size*/{
-  img.mainmovieImg {
-  width: 55%;
-  max-height: 55%;
+img.mainMovieImg {
+  width: 25%;
+  height: 50%;
   margin:auto;
   float:left;
   border-color: #D4AF37;
   border-width: thick;
   border-style: solid;
-  }
 }
-@media screen and (max-width:490px) /*phone size*/{
-  img.mainmovieImg{
-    width: 20%;
-    max-height:20%;
-    margin:auto;
-    float:left;
-    border-color: #d442f4;
-    border-width: thick;
-    border-style: solid;
-  }
-}
-
-@media screen and (min-width:491px) and (max-width:900px) /*tablet size*/{
-  img.mainmovieImg{
-    width: 40%;
-    height: 40%;
+@media only screen and (min-width: 500px) /*phone size*/{
+  img.mainMovieImg{
+    width: 50%;
+    height: 50%;
     margin:auto;
     float:left;
     border-color: #D4AF37;
@@ -125,15 +134,16 @@ img.movieimg {
     border-style: solid;
   }
 }
-
-img.landscapeImg{
-  width: 100%;
-  height: 100%;
-  margin:auto;
-  float:left;
-  border-color: #D4AF37;
-  border-width: thick;
-  border-style: solid;
+@media only screen and (min-width: 600px) /*phone size*/{
+  img.mainMovieImg{
+    width: 30%;
+    height: 50%;
+    margin:auto;
+    float:left;
+    border-color: #D4AF37;
+    border-width: thick;
+    border-style: solid;
+  }
 }
 
 

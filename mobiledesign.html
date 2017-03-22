@@ -45,7 +45,7 @@
 
 <body>
 
-    <body background="http://thegracelifechurch.com/wp-content/uploads/2014/07/website-background-full-hd-backgrounds-vintage-red-661979.jpg">
+    <body background="/Media/background.jpg">
 
         <header>
             <img src="/Media/tatties_logo.png" alt="">
@@ -70,15 +70,28 @@
                 </div>
                 <br>
                 <br>
+
                 <div class="row">
-
-                    <div class="mainMovie large-8 small-3 medium-5">
-                        <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
-                        <h2 class="movieTitle"> Movie title </h2>
-                        <P class="movieTxt"> This is information about a movie. This move is rated 50 stars out of 42, with 6 perfect scores. This move released in 20,000BC.</p>
-
-                    </div>
+                  <h2 class="test">Bums</h2>
+                  <div class="landscape-img">
+                    <img src="http://myfantasyart.com/wp-content/uploads/2013/07/pacific-rim-movie-poster-images-f4-1400x643.jpg" alt="Movie poster">
+                    <h1><span>
+                      Movie Title
+                    </span></h1>
                   </div>
+
+                  <div class="mainMovie large-8 small-3 medium-5">
+                      <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
+                      <h2 class="movieTitle"></h2>
+                      <script>
+                      var a = $('.landscape-img span').text();
+                      console.log(a);
+                      $('.movieTitle').text(a);
+                      </script>
+                      <P class="movieTxt"> This is information about a movie. This move is rated 50 stars out of 42, with 6 perfect scores. This move released in 20,000BC.</p>
+
+                  </div>
+                </div>
                     <br>
                     <br>
                     <br>

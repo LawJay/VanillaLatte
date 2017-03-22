@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
-* @Last modified time: 2017-03-22T11:00:55+00:00
+* @Last modified time: 2017-03-22T11:06:29+00:00
 */
 
 
@@ -103,8 +103,8 @@ img.movieimg {
 }
 @media only screen and (max-width:490px) /*phone size*/{
   img.mainMovieImg{
-    width: 30%;
-    height:30%;
+    width: 20%;
+    height:10%;
     margin:auto;
     float:left;
     border-color: #D4AF37;

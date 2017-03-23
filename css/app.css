@@ -168,11 +168,11 @@ img.mainMovieImg {
     margin-left: 10%;
     width:40%;
     word-wrap: normal;
-    float:left;
+    float:right;
     font-size: 12px;
   }
   h2.movieTitle {
-    float:left;
+    float:right;
     margin-left: 8%;
     width:40%;
   }

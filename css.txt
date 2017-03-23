@@ -1,0 +1,172 @@
+/**
+* @Date:   2017-03-17T15:05:08+00:00
+* @Last modified time: 2017-03-22T09:45:44+00:00
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    text-align: center;
+    background-color: #970919;
+    color:#928C9A;
+}
+
+
+div.movieList {
+  width: 100%;
+  height: 320px;
+  overflow:scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display:flex;
+  flex-direction: row;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+div.bottompage {
+  width:100%;
+}
+
+.landscape-img {
+  position: relative;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+.landscape-img h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*width: 100%;*/
+}
+
+.landscape-img h1 span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+div.mainMovie {
+  width:100%;
+}
+
+
+h2.movieTitle {
+  float:left;
+  width:50%;
+}
+
+p.movieTxt {
+  margin-right: 3%;
+  margin-left: 3%;
+  width:50%;
+  word-wrap: normal;
+  float:left;
+
+}
+
+div.castDiv {
+  float: left;
+  width:25%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+div.mediaDiv {
+  width:25%;
+  float:left;
+  margin-right: 2%;
+  margin-left: 2%;
+
+}
+div.reviewDiv {
+  width: 25%;
+  float:left;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+input.search {
+  margin:0 auto;
+  height: 50px;
+  width: 350px;
+}
+
+img.movieimg {
+  width: auto;
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-color: #000026;
+  border-width: medium;
+  border-style: solid;
+
+}
+
+img.mainMovieImg {
+  width: 25%;
+  height: 50%;
+  margin:auto;
+  float:left;
+  border-color: #D4AF37;
+  border-width: thick;
+  border-style: solid;
+}
+@media only screen and (min-width: 500px) /*phone size*/{
+  img.mainMovieImg{
+    width: 50%;
+    height: 50%;
+    margin:auto;
+    float:left;
+    border-color: #D4AF37;
+    border-width: thick;
+    border-style: solid;
+  }
+}
+@media only screen and (min-width: 600px) /*phone size*/{
+  img.mainMovieImg{
+    width: 30%;
+    height: 50%;
+    margin:auto;
+    float:left;
+    border-color: #D4AF37;
+    border-width: thick;
+    border-style: solid;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  div.castDiv {
+    width:25%;
+    margin-right: 0%;
+    margin-left: 0%;
+    float:none;
+  }
+  div.mediaDiv {
+    width:25%;
+    margin-right: 0%;
+    margin-left: 0%;
+    float:none;
+
+  }
+  div.reviewDiv {
+    width:25%;
+    margin-right: 0%;
+    margin-left: 0%;
+    float:none;
+
+  }
+
+  }

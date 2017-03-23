@@ -124,6 +124,12 @@ img.mainMovieImg {
   border-style: solid;
 }
 
+div.movieBasicInfo {
+  float:left;
+  width: 50%;
+  height: 40%;
+}
+
 @media only screen and (min-width: 600px max-width: 900px) /*tablet size*/{
   img.mainMovieImg{
     width: 25%;
@@ -262,7 +268,7 @@ img.mainMovieImg {
     }
     div.movieBasicInfo {
       float:left;
-      width: 50%;
-      height: 50%;
+      width: 40%;
+      height: 40%;
     }
   }

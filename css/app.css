@@ -156,9 +156,8 @@ img.mainMovieImg {
 
   }
   img.mainMovieImg{
-    width: 50%;
-    height: auto;
-    margin:auto;
+    width: 40%;
+    height: 40%;
     float:left;
     border-color: #D4AF37;
     border-width: thick;

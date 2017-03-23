@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
-* @Last modified time: 2017-03-22T09:45:44+00:00
+ * @Last modified time: 2017-03-23T09:40:37+00:00
 */
 
 
@@ -115,8 +115,8 @@ img.movieimg {
 }
 
 img.mainMovieImg {
-  width: 25%;
-  height: 50%;
+  width: 20%;
+  height: 35%;
   margin:auto;
   float:left;
   border-color: #D4AF37;
@@ -124,10 +124,10 @@ img.mainMovieImg {
   border-style: solid;
 }
 
-@media only screen and (min-width: 600px) /*tablet size*/{
+@media only screen and (min-width: 600px max-width: 900px) /*tablet size*/{
   img.mainMovieImg{
-    width: 40%;
-    height: 30%;
+    width: 20%;
+    height: 35%;
     margin:auto;
     float:left;
     border-color: #D4AF37;

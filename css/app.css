@@ -124,7 +124,7 @@ img.mainMovieImg {
   border-style: solid;
 }
 
-@media only screen and (min-width: 741px) /*tablet size*/{
+@media only screen and (min-width: 741px) /*phone size*/{
   img.mainMovieImg{
     width: 40%;
     height: 30%;
@@ -135,10 +135,10 @@ img.mainMovieImg {
     border-style: solid;
   }
 }
-@media only screen and (min-width: 200px) and (max-width: 740px) /*phone size*/{
+@media only screen and (min-width: 200px) and (max-width: 740px) /*tablet size*/{
   div.movieList {
     width: 100%;
-    height: 30%;
+    height: 10%;
     overflow:scroll;
     overflow-y: hidden;
     white-space: nowrap;

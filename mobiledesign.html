@@ -61,7 +61,7 @@
 
         <main>
             <div class="row">
-                <div class="large-8 small-3 medium-5 movieList">
+                <div class="movieList">
                     <img src="http://graphicdesignjunction.com/wp-content/uploads/2011/12/grey-movie-poster.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="https://s-media-cache-ak0.pinimg.com/736x/78/72/66/78726686611e3c9b6cbe3f1ede601fcf.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="http://www.impawards.com/2016/posters/xmen_apocalypse_ver18_xxlg.jpg" alt="there should be a cat here..." class="movieimg">
@@ -83,14 +83,16 @@
 
                   <div class="mainMovie large-8 small-3 medium-5">
                       <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
-                      <h2 class="movieTitle"></h2>
-                      <script>
-                      var a = $('.landscape-img span').text();
-                      console.log(a);
-                      $('.movieTitle').text(a);
-                      </script>
-                      <P class="movieTxt"> This is information about a movie.</p>
 
+                      <div class="movieBasicInfo">
+                        <h2 class="movieTitle"></h2>
+                        <script>
+                        var a = $('.landscape-img span').text();
+                        console.log(a);
+                        $('.movieTitle').text(a);
+                        </script>
+                        <P class="movieTxt"> This is information about a movie.</p>
+                      </div>
                   </div>
                 </div>
                     <br>

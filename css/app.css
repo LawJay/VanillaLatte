@@ -217,7 +217,7 @@ img.mainMovieImg {
   }
 
 }
-@media screen and (min-width: 1336px) and (max-height: 758px) {
+@media screen and (min-width: 1920px) and (max-height: 1080px) {
   img.mainMovieImg {
     width:50%;
     height:50%;

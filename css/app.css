@@ -1,6 +1,6 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
- * @Last modified time: 2017-03-23T09:57:23+00:00
+ * @Last modified time: 2017-03-23T10:08:51+00:00
 */
 
 
@@ -154,8 +154,8 @@ img.mainMovieImg {
 
   }
   img.mainMovieImg{
-    width: 50%;
-    height: 30%;
+    width: 30%;
+    height: 60%;
     float:left;
     border-color: #D4AF37;
     border-width: thick;
@@ -201,7 +201,7 @@ img.mainMovieImg {
   }
   img.mainMovieImg {
     width: 30%;
-    height: 55%;
+    height: 65%;
     margin:auto;
     float:left;
     border-color: #D4AF37;

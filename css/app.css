@@ -126,8 +126,8 @@ img.mainMovieImg {
 
 @media only screen and (min-width: 741px) /*tablet size*/{
   img.mainMovieImg{
-    width: 70%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     margin:auto;
     float:left;
     border-color: #D4AF37;

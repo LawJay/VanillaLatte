@@ -135,6 +135,7 @@ img.mainMovieImg {
     border-style: solid;
   }
 }
+
 @media only screen and (min-width: 200px) and (max-width: 740px) /*tablet size*/{
   div.movieList {
     width: 100%;
@@ -147,7 +148,7 @@ img.mainMovieImg {
   }
   img.movieimg {
     width: auto;
-    height: 80%;
+    height: 40%;
     margin-left: 5px;
     margin-right: 5px;
     border-color: #000026;
@@ -156,8 +157,8 @@ img.mainMovieImg {
 
   }
   img.mainMovieImg{
-    width: 40%;
-    height: 40%;
+    width: 10%;
+    height: 10%;
     float:left;
     border-color: #D4AF37;
     border-width: thick;

@@ -124,7 +124,7 @@ img.mainMovieImg {
   border-style: solid;
 }
 
-@media only screen and (min-width: 741px) /*phone size*/{
+@media only screen and (min-width: 600px) /*tablet size*/{
   img.mainMovieImg{
     width: 40%;
     height: 30%;
@@ -136,19 +136,16 @@ img.mainMovieImg {
   }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 740px) /*tablet size*/{
+@media only screen and (min-width: 200px) and (max-width: 599px) /*phone size*/{
   div.movieList {
     width: 100%;
-    height: 10%;
+    height: 100px;
     overflow:scroll;
     overflow-y: hidden;
-    white-space: nowrap;
-    display:flex;
-    flex-direction: row;
   }
   img.movieimg {
     width: auto;
-    height: 40%;
+    height: 100%;
     margin-left: 5px;
     margin-right: 5px;
     border-color: #000026;
@@ -157,8 +154,8 @@ img.mainMovieImg {
 
   }
   img.mainMovieImg{
-    width: 10%;
-    height: 10%;
+    width: 50%;
+    height: 30%;
     float:left;
     border-color: #D4AF37;
     border-width: thick;
@@ -166,29 +163,18 @@ img.mainMovieImg {
   }
   p.movieTxt {
     margin-right: 3%;
-    margin-left: 10%;
+    margin-left: 3%;
     width:40%;
     word-wrap: normal;
-    float:right;
-    font-size: 1px;
+    float:left;
+    font-size: 12px;
   }
   h2.movieTitle {
-    float:right;
-    margin-left: 8%;
+    float:left;
+    margin-left: 3%;
     width:40%;
   }
 
-}
-@media only screen and (min-width: 1001px) /*desktop size*/{
-  img.mainMovieImg{
-    width: 30%;
-    height: 50%;
-    margin:auto;
-    float:left;
-    border-color: #D4AF37;
-    border-width: thick;
-    border-style: solid;
-  }
 }
 
 

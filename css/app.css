@@ -124,7 +124,7 @@ img.mainMovieImg {
   border-style: solid;
 }
 
-@media only screen and (min-width: 400px) /*tablet size*/{
+@media only screen and (min-width: 741px) /*tablet size*/{
   img.mainMovieImg{
     width: 70%;
     height: 50%;
@@ -135,7 +135,7 @@ img.mainMovieImg {
     border-style: solid;
   }
 }
-@media only screen and (min-width: 200px) and (max-width: 399px) /*phone size*/{
+@media only screen and (min-width: 200px) and (max-width: 740px) /*phone size*/{
   div.movieList {
     width: 100%;
     height: 30%;

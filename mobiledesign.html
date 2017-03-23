@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-03-22T12:03:20+00:00
+@Last modified time: 2017-03-10T15:21:14+00:00
 -->
 
 
@@ -14,34 +14,10 @@
     <meta name="Desciption" content="Mobile orientated design.
   This is part of mobile first design">
     <link rel="stylesheet" href="css/foundation.css">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<script src="js/vendor/jquery.js"></script>-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script>
-    $(document).ready(function(){
-      $('.movieimg').click(function(){
-      var currentimage = $(this).attr('src');
-        $('#mainImg').attr('src', currentimage);
-      });
-    });
-    </script>
-
-    <script>
-    $(document).ready(function(){
-      $('.movieimg').hover(function(){
-      $(this).css('border-color', '#D4AF37');
-    }, function(){
-      $(this).css('border-color', '#000026')
-    });
-    });
-    </script>
-
-    </script>
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
 </head>
@@ -61,7 +37,7 @@
 
         <main>
             <div class="row">
-                <div class="movieList large-8 small-3 medium-5">
+                <div class="large-8 small-3 medium-5 movieList">
                     <img src="http://graphicdesignjunction.com/wp-content/uploads/2011/12/grey-movie-poster.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="https://s-media-cache-ak0.pinimg.com/736x/78/72/66/78726686611e3c9b6cbe3f1ede601fcf.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="http://www.impawards.com/2016/posters/xmen_apocalypse_ver18_xxlg.jpg" alt="there should be a cat here..." class="movieimg">
@@ -69,32 +45,21 @@
                     <img src="https://s-media-cache-ak0.pinimg.com/736x/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="http://cdn.collider.com/wp-content/uploads/trainspotting-poster.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="http://www.impawards.com/2010/posters/macgruber_xlg.jpg" alt="there should be a cat here..." class="movieimg">
-                  </div>
+                    </row>
                 </div>
-
+                <br>
+                <br>
                 <div class="row">
-                  <h2 class="test"></h2>
-                  <div class="landscape-img">
-                    <img src="http://myfantasyart.com/wp-content/uploads/2013/07/pacific-rim-movie-poster-images-f4-1400x643.jpg" alt="Movie poster">
-                    <h1><span>
-                      Movie Title
-                    </span></h1>
-                  </div>
 
-                  <div class="mainMovie large-8 small-3 medium-5">
-                      <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
+                    <div class="mainMovie large-8 small-3 medium-5">
+                        <img src="img/cat.png" alt="img" class="mainMovieImg">
+                        <h2 class="movieTitle"> Movie title </h2>
+                        <P class="movieTxt"> This is information about a movie. This move is rated 50 stars out of 42, with 6 perfect scores. This move released in 20,000BC.</p>
 
-                      <div class="movieBasicInfo">
-                        <h2 class="movieTitle"></h2>
-                        <script>
-                        var a = $('.landscape-img span').text();
-                        console.log(a);
-                        $('.movieTitle').text(a);
-                        </script>
-                        <P class="movieTxt"> This is information about a movie.</p>
-                      </div>
+                    </div>
                   </div>
-                </div>
+                    <br>
+                    <br>
                     <br>
                     <div class="bottompage">
                         <div class="row">

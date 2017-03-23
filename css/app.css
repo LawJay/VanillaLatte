@@ -1,6 +1,10 @@
 /**
 * @Date:   2017-03-17T15:05:08+00:00
+<<<<<<< HEAD
+* @Last modified time: 2017-03-22T09:45:44+00:00
+=======
  * @Last modified time: 2017-03-23T10:08:51+00:00
+>>>>>>> refs/remotes/origin/master
 */
 
 
@@ -115,8 +119,13 @@ img.movieimg {
 }
 
 img.mainMovieImg {
+<<<<<<< HEAD
+  width: 25%;
+  height: 50%;
+=======
   width: 100%;
   height: auto;
+>>>>>>> refs/remotes/origin/master
   margin:auto;
   float:left;
   border-color: #D4AF37;
@@ -124,10 +133,17 @@ img.mainMovieImg {
   border-style: solid;
 }
 
+<<<<<<< HEAD
+@media only screen and (min-width: 600px) /*tablet size*/{
+  img.mainMovieImg{
+    width: 40%;
+    height: 30%;
+=======
 @media only screen and (min-width: 600px max-width: 900px) /*tablet size*/{
   img.mainMovieImg{
     width: 25%;
     height: 35%;
+>>>>>>> refs/remotes/origin/master
     margin:auto;
     float:left;
     border-color: #D4AF37;
@@ -154,8 +170,13 @@ img.mainMovieImg {
 
   }
   img.mainMovieImg{
+<<<<<<< HEAD
+    width: 50%;
+    height: 30%;
+=======
     width: 30%;
     height: 60%;
+>>>>>>> refs/remotes/origin/master
     float:left;
     border-color: #D4AF37;
     border-width: thick;
@@ -174,6 +195,9 @@ img.mainMovieImg {
     margin-left: 3%;
     width:40%;
   }
+<<<<<<< HEAD
+
+=======
 }
 
 @media only screen and (min-width: 901px) /*desktop size*/{
@@ -208,6 +232,7 @@ img.mainMovieImg {
     border-width: thick;
     border-style: solid;
   }
+>>>>>>> refs/remotes/origin/master
 }
 
 
@@ -233,4 +258,31 @@ img.mainMovieImg {
 
   }
 
+  }
+  @media screen and (min-width: 1336px) and (max-height: 758px) {
+    img.mainMovieImg {
+      width: 30%;
+      height: 60%;
+      float:left;
+      border-color: #D4AF37;
+      border-width: thick;
+      border-style: solid;
+    }
+    div.movieBasicInfo {
+      float:left;
+      width: 50%;
+      height: 40%;
+    }
+
+  }
+  @media screen and (min-width: 1920px) and (max-height: 1080px) {
+    img.mainMovieImg {
+      width:50%;
+      height:50%;
+      margin:auto;
+      float:left;
+      border-color: #D4AF37;
+      border-width: thick;
+      border-style: solid;
+    }
   }

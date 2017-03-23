@@ -23,22 +23,22 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script>
-    $(document).ready(function(){
-      $('.movieimg').click(function(){
-      var currentimage = $(this).attr('src');
-        $('#mainImg').attr('src', currentimage);
-      });
-    });
+        $(document).ready(function() {
+            $('.movieimg').click(function() {
+                var currentimage = $(this).attr('src');
+                $('#mainImg').attr('src', currentimage);
+            });
+        });
     </script>
 
     <script>
-    $(document).ready(function(){
-      $('.movieimg').hover(function(){
-      $(this).css('border-color', '#D4AF37');
-    }, function(){
-      $(this).css('border-color', '#000026')
-    });
-    });
+        $(document).ready(function() {
+            $('.movieimg').hover(function() {
+                $(this).css('border-color', '#D4AF37');
+            }, function() {
+                $(this).css('border-color', '#000026')
+            });
+        });
     </script>
 
     </script>
@@ -69,62 +69,62 @@
                     <img src="https://s-media-cache-ak0.pinimg.com/736x/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="http://cdn.collider.com/wp-content/uploads/trainspotting-poster.jpg" alt="there should be a cat here..." class="movieimg">
                     <img src="http://www.impawards.com/2010/posters/macgruber_xlg.jpg" alt="there should be a cat here..." class="movieimg">
-                  </div>
                 </div>
+            </div>
 
-                <div class="row">
-                  <h2 class="test"></h2>
-                  <div class="landscape-img">
+            <div class="row">
+                <h2 class="test"></h2>
+                <div class="landscape-img">
                     <img src="http://myfantasyart.com/wp-content/uploads/2013/07/pacific-rim-movie-poster-images-f4-1400x643.jpg" alt="Movie poster">
                     <h1><span>
                       Movie Title
                     </span></h1>
-                  </div>
+                </div>
 
-                  <div class="mainMovie large-8 small-3 medium-5">
-                      <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
+                <div class="mainMovie large-8 small-3 medium-5">
+                    <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
 
-                      <div class="movieBasicInfo">
+                    <div class="movieBasicInfo">
                         <h2 class="movieTitle"></h2>
                         <script>
-                        var a = $('.landscape-img span').text();
-                        console.log(a);
-                        $('.movieTitle').text(a);
+                            var a = $('.landscape-img span').text();
+                            console.log(a);
+                            $('.movieTitle').text(a);
                         </script>
                         <P class="movieTxt"> This is information about a movie.</p>
-                      </div>
-                  </div>
+                    </div>
                 </div>
-                    <br>
-                    <div class="bottompage">
-                        <div class="row">
+            </div>
+            <br>
+            <div class="bottompage">
+                <div class="row">
 
 
 
-                            <div class="castDiv">
-                                <div class="large-8 small-3 medium-5 cast">
-                                    <h2> Cast </h2>
-                                    <p>Cast text</p>
-                                </div>
-                            </div>
-
-                            <div class="mediaDiv">
-                                <div class="large-8 small-3 medium-5 media">
-
-                                    <h2> Media </h2>
-                                    <p>Media text</p>
-                                </div>
-                            </div>
-                            <div class="reviewDiv">
-                                <div class="large-8 small-3 medium-5 movieReviews">
-
-                                    <h2> Reviews </h2>
-                                    <p>Review text</p>
-                                </div>
-                            </div>
-
+                    <div class="castDiv">
+                        <div class="large-8 small-3 medium-5 cast">
+                            <h2> Cast </h2>
+                            <p>Cast text</p>
                         </div>
                     </div>
+
+                    <div class="mediaDiv">
+                        <div class="large-8 small-3 medium-5 media">
+
+                            <h2> Media </h2>
+                            <p>Media text</p>
+                        </div>
+                    </div>
+                    <div class="reviewDiv">
+                        <div class="large-8 small-3 medium-5 movieReviews">
+
+                            <h2> Reviews </h2>
+                            <p>Review text</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </main>
         <footer>Copyright Vanilla Latte Inc © All Rights Reserved</footer>
     </body>

@@ -234,3 +234,35 @@ img.mainMovieImg {
   }
 
   }
+  @media screen and (min-width: 1336px) and (max-height: 758px) {
+    img.mainMovieImg {
+      width: 30%;
+      height: 60%;
+      float:left;
+      border-color: #D4AF37;
+      border-width: thick;
+      border-style: solid;
+    }
+    div.movieBasicInfo {
+      float:left;
+      width: 50%;
+      height: 40%;
+    }
+
+  }
+  @media screen and (min-width: 1920px) and (max-height: 1080px) {
+    img.mainMovieImg {
+      width:50%;
+      height:50%;
+      margin:auto;
+      float:left;
+      border-color: #D4AF37;
+      border-width: thick;
+      border-style: solid;
+    }
+    div.movieBasicInfo {
+      float:left;
+      width: 50%;
+      height: 50%;
+    }
+  }

@@ -256,7 +256,6 @@ div.movieBasicInfo {
     }
 
   }
-  @media screen and ()
   @media screen and (min-width: 1920px) and (max-height: 1080px) {
     img.mainMovieImg {
       width:30%;

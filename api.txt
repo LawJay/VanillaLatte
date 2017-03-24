@@ -2,3 +2,6 @@ API Info--
 
 username = naelegs
 password = password1
+
+Google images API key
+key: AIzaSyAaFX7CYJLUY79HvaD7oXXaG2CMWyLa9R8

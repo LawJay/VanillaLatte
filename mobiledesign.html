@@ -49,8 +49,9 @@
             var imgstring = "";
             for (var i = 0; i < 10; i++) {
                 var poster = jsondata.Search[i].Poster;
+                var id = jsondata.Search[i].imdbID;
                 console.log(poster);
-                imgstring += "<img src='" + poster + "'alt='there should be a cat here...'" + "class='movieimg'>";
+                imgstring += "<img src='" + poster + "'alt='there should be a cat here...'" + "class='movieimg' id='"+id+"'>";
 
                 //append the img string
 
@@ -65,9 +66,33 @@
         $(document).ready(function() {
             $('.movieimg').click(function() {
                 var currentimage = $(this).attr('src');
+                var imdbID = $(this).attr('id');
                 $('#mainImg').attr('src', currentimage);
+                //get the plot and title from what the id embedded on the img's id attribute.
+                
+                getTitle(imdbID)
+
             });
         });
+      }
+
+      function getTitle(id) {
+        //prepare the url
+        var url2 = "http://www.omdbapi.com/?i="+id+"&plot=short&tomatos=true"
+        $.getJSON(url2, function(jsondata) {
+          //handle the results.
+          changeTitle(jsondata)
+        });
+      }
+      function changeTitle(jsondata) {
+        //clear the old out. we'll add it back in.
+        var title = jsondata.Title;
+        var plot = jsondata.Plot;
+        $('#movieTitle').empty();
+        $('#movieTxt').empty();
+        $('#movieTitle').append(title);
+        $('#movieTxt').append(plot);
+
       }
       changeImg();
     </script>
@@ -129,13 +154,8 @@
                     <img src="img/cat.png" alt="img" class="mainMovieImg" id="mainImg">
 
                     <div class="movieBasicInfo">
-                        <h2 class="movieTitle"></h2>
-                        <script>
-                            var a = $('.landscape-img span').text();
-                            console.log(a);
-                            $('.movieTitle').text(a);
-                        </script>
-                        <P class="movieTxt"> This is information about a movie.</p>
+                        <h2 class="movieTitle" id="movieTitle"></h2>
+                        <P class="movieTxt" id="movieTxt">Click an image to display info</p>
                     </div>
                 </div>
             </div>

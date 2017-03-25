@@ -13,105 +13,101 @@
     <meta name="Author" content="Murray Lyne, Jamie Law, Jordan youngman, Joe 'ma bobby' MacDonald">
     <meta name="Desciption" content="Mobile orientated design.
   This is part of mobile first design">
-    <link rel="stylesheet" href="css/foundation.css">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<script src="js/vendor/jquery.js"></script>-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script>
-        $(function() {
-            $('#search').submit(function() {
-                var query = $("#searchbar").val();
-
-                getMovies(query);
-                return false;
+        <link rel="stylesheet" href="css/foundation.css">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<script src="js/vendor/jquery.js"></script>-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script>
+            $(function() {
+                $('#search').submit(function() {
+                    var query = $("#searchbar").val();
+                    getMovies(query);
+                    return false;
+                });
             });
-        });
-
-        function getMovies(query) {
-            var url = "http://www.omdbapi.com/?s=" + query + "&type=movie";
-
-            $.getJSON(url, function(jsondata) {
-                //handle what we've found.
-                console.log(jsondata);
-                changePosters(jsondata)
-            });
-        }
-
-        function changePosters(jsondata) {
-            //clear out all the img tags in movieList
-            $('#movieList').empty();
-            //now, add in new img tags.
-            var imgstring = "";
-            for (var i = 0; i < 10; i++) {
-                var poster = jsondata.Search[i].Poster;
-                var id = jsondata.Search[i].imdbID;
-                console.log(poster);
-                imgstring += "<img src='" + poster + "'alt='there should be a cat here...'" + "class='movieimg' id='"+id+"'>";
-
-                //append the img string
-
+            function getMovies(query) {
+                var url = "http://www.omdbapi.com/?s=" + query + "&type=movie";
+                $.getJSON(url, function(jsondata) {
+                    //handle what we've found.
+                    console.log(jsondata);
+                    changePosters(jsondata)
+                });
             }
-            $("#movieList").append(imgstring);
-            hover();
+            function changePosters(jsondata) {
+                //clear out all the img tags in movieList
+                $('#movieList').empty();
+                //now, add in new img tags.
+                var imgstring = "";
+                for (var i = 0; i < 10; i++) {
+                    var poster = jsondata.Search[i].Poster;
+                    var id = jsondata.Search[i].imdbID;
+                    console.log(poster);
+                    if(poster === "N/A"){
+                      poster = "img/tatties.png";
+                    }
+                    else {
+                      console.log(poster);
+                  }
+                  imgstring += "<img src='" + poster + "'alt='The Rotten Tatties robots could not find an image for this movie :('" + "class='movieimg' id='" + id + "'>";
+                    //append the img string
+              }
+                $("#movieList").append(imgstring);
+                hover();
+                changeImg();
+            }
+        </script>
+        <script>
+            function changeImg() {
+                $(document).ready(function() {
+                    $('.movieimg').click(function() {
+                        var currentimage = $(this).attr('src');
+                        var imdbID = $(this).attr('id');
+                        $('#mainImg').attr('src', currentimage);
+                        //get the plot and title from what the id embedded on the img's id attribute.
+                        getTitle(imdbID)
+                    });
+                });
+            }
+            function getTitle(id) {
+                //prepare the url
+                var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short&tomatos=true"
+                $.getJSON(url2, function(jsondata) {
+                    //handle the results.
+                    changeTitle(jsondata)
+                });
+            }
+            function changeTitle(jsondata) {
+                //clear the old out. we'll add it back in.
+                var title = jsondata.Title;
+                var plot = jsondata.Plot;
+                $('#movieTitle').empty();
+                $('#movieTxt').empty();
+                $('#movieTitle').append(title);
+                $('#movieTxt').append(plot);
+            }
             changeImg();
-        }
-    </script>
-    <script>
-    function changeImg() {
-        $(document).ready(function() {
-            $('.movieimg').click(function() {
-                var currentimage = $(this).attr('src');
-                var imdbID = $(this).attr('id');
-                $('#mainImg').attr('src', currentimage);
-                //get the plot and title from what the id embedded on the img's id attribute.
+        </script>
 
-                getTitle(imdbID)
-
-            });
-        });
-      }
-
-      function getTitle(id) {
-        //prepare the url
-        var url2 = "http://www.omdbapi.com/?i="+id+"&plot=short&tomatos=true"
-        $.getJSON(url2, function(jsondata) {
-          //handle the results.
-          changeTitle(jsondata)
-        });
-      }
-      function changeTitle(jsondata) {
-        //clear the old out. we'll add it back in.
-        var title = jsondata.Title;
-        var plot = jsondata.Plot;
-        $('#movieTitle').empty();
-        $('#movieTxt').empty();
-        $('#movieTitle').append(title);
-        $('#movieTxt').append(plot);
-
-      }
-      changeImg();
-    </script>
-
-    <script>
-    function hover() {
-        $(document).ready(function() {
-            $('.movieimg').hover(function() {
-                $(this).css('border-color', '#D4AF37');
-            }, function() {
-                $(this).css('border-color', '#000026')
-            });
-        });
-      }
-      hover();
-    </script>
+        <script>
+            function hover() {
+                $(document).ready(function() {
+                    $('.movieimg').hover(function() {
+                        $(this).css('border-color', '#D4AF37');
+                    }, function() {
+                        $(this).css('border-color', '#000026')
+                    });
+                });
+            }
+            hover();
+        </script>
 
 
-    <link rel="icon" type="image/png" href="Media/favicon.png">
+        <link rel="icon" type="image/png" href="Media/favicon.png">
 </head>
 
 <body>

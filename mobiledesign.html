@@ -26,22 +26,18 @@
             $(function() {
                 $('#search').submit(function() {
                     var query = $("#searchbar").val();
-
                     getMovies(query);
                     return false;
                 });
             });
-
             function getMovies(query) {
                 var url = "http://www.omdbapi.com/?s=" + query + "&type=movie";
-
                 $.getJSON(url, function(jsondata) {
                     //handle what we've found.
                     console.log(jsondata);
                     changePosters(jsondata)
                 });
             }
-
             function changePosters(jsondata) {
                 //clear out all the img tags in movieList
                 $('#movieList').empty();
@@ -51,7 +47,7 @@
                     var poster = jsondata.Search[i].Poster;
                     var id = jsondata.Search[i].imdbID;
                     console.log(poster);
-                    if(poster === "N/A" || plot =="N/A"){
+                    if(poster === "N/A"){
                       poster = "img/tatties.png";
                     }
                     else {
@@ -59,7 +55,6 @@
                   }
                   imgstring += "<img src='" + poster + "'alt='The Rotten Tatties robots could not find an image for this movie :('" + "class='movieimg' id='" + id + "'>";
                     //append the img string
-
               }
                 $("#movieList").append(imgstring);
                 hover();
@@ -74,13 +69,10 @@
                         var imdbID = $(this).attr('id');
                         $('#mainImg').attr('src', currentimage);
                         //get the plot and title from what the id embedded on the img's id attribute.
-
                         getTitle(imdbID)
-
                     });
                 });
             }
-
             function getTitle(id) {
                 //prepare the url
                 var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short&tomatos=true"
@@ -89,7 +81,6 @@
                     changeTitle(jsondata)
                 });
             }
-
             function changeTitle(jsondata) {
                 //clear the old out. we'll add it back in.
                 var title = jsondata.Title;
@@ -98,7 +89,6 @@
                 $('#movieTxt').empty();
                 $('#movieTitle').append(title);
                 $('#movieTxt').append(plot);
-
             }
             changeImg();
         </script>

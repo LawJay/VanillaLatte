@@ -47,6 +47,19 @@
                     var poster = jsondata.Search[i].Poster;
                     var id = jsondata.Search[i].imdbID;
                     console.log(poster);
+
+                    $(function() {
+                      $.ajax(poster,
+                      {
+                        statusCode: {
+                          403: function() {
+                            poster = "/Media/potato.png"
+                          }
+                        }
+                      })
+
+                    });
+
                     if(poster === "N/A"){
                       poster = "/Media/potato.png";
                     }

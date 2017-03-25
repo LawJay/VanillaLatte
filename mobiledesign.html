@@ -48,7 +48,7 @@
                     var id = jsondata.Search[i].imdbID;
                     console.log(poster);
                     if(poster === "N/A"){
-                      poster = "img/tatties.png";
+                      poster = "Media/potato.png";
                     }
                     else {
                       console.log(poster);
@@ -65,7 +65,6 @@
             function changeImg() {
                 $(document).ready(function() {
                     $('.movieimg').click(function() {
-                        var currentimage = $(this).attr('src');
                         var imdbID = $(this).attr('id');
                         $('#mainImg').attr('src', currentimage);
                         //get the plot and title from what the id embedded on the img's id attribute.

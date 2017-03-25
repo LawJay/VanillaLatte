@@ -51,11 +51,16 @@
                     var poster = jsondata.Search[i].Poster;
                     var id = jsondata.Search[i].imdbID;
                     console.log(poster);
-                    imgstring += "<img src='" + poster + "'alt='The Rotten Tatties robots could not find an image for this movie :('" + "class='movieimg' id='" + id + "'>";
-
+                    if(poster === "N/A"){
+                      poster = "img/tatties.png";
+                    }
+                    else {
+                      console.log(poster);
+                  }
+                  imgstring += "<img src='" + poster + "'alt='The Rotten Tatties robots could not find an image for this movie :('" + "class='movieimg' id='" + id + "'>";
                     //append the img string
 
-                }
+              }
                 $("#movieList").append(imgstring);
                 hover();
                 changeImg();

@@ -104,6 +104,11 @@
             var awards = jsondata.Awards;
             var year = jsondata.Year;
             var rating = jsondata.Rated;
+
+            if(awards === "N/A") {
+              awards = "No awards";
+            }
+
             $('#movieTitle').empty();
             $('#movieTxt').empty();
             $('#year').empty();

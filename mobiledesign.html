@@ -100,10 +100,20 @@
             //clear the old out. we'll add it back in.
             var title = jsondata.Title;
             var plot = jsondata.Plot;
+            var director = jsondata.Director;
+            var awards = jsondata.Awards;
+            var year = jsondata.Year;
+            var rating = jsondata.Rated;
             $('#movieTitle').empty();
             $('#movieTxt').empty();
+            $('#year').empty();
+            $('#director').empty();
+            $('#awards').empty();
             $('#movieTitle').append(title);
             $('#movieTxt').append(plot);
+            $('#year').append("Released in " + year + ". Rated " + rating);
+            $('#director').append("Directed by " + director);
+            $('#awards').append(awards);
 
             //REVIEWS
             var metascore = jsondata.Metascore;
@@ -174,7 +184,10 @@
 
                     <div class="movieBasicInfo">
                         <h2 class="movieTitle" id="movieTitle"></h2>
-                        <P class="movieTxt" id="movieTxt">Click an image to display info</p>
+                        <P class="movieTxt" id="movieTxt">Search something up, then click an image!</p>
+                        <p id="year"></p>
+                        <p id="director"></p>
+                        <p id="awards"></p>
                     </div>
                 </div>
             </div>

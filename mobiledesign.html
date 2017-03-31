@@ -31,6 +31,8 @@
             });
         });
 
+        //get an array of movies
+
         function getMovies(query) {
             var url = "http://www.omdbapi.com/?s=" + query + "&type=movie";
             $.getJSON(url, function(jsondata) {
@@ -75,6 +77,7 @@
         }
     </script>
     <script>
+    //function to change the image
         function changeImg() {
             $(document).ready(function() {
                 $('.movieimg').click(function() {
@@ -86,7 +89,7 @@
                 });
             });
         }
-
+        //get the title of the current image by using the imdbID from the id attribute to pull more data.
         function getTitle(id) {
             //prepare the url
             var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short&tomatos=true"
@@ -108,7 +111,7 @@
             if(awards === "N/A") {
               awards = "No awards";
             }
-
+            //add in the information after clearing the html of the old tags
             $('#movieTitle').empty();
             $('#movieTxt').empty();
             $('#year').empty();
@@ -125,6 +128,7 @@
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
 
+            //these string prep the data in a html format.
             var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";
             var imdbString = "<h5>IMDB</h5>" + imdbrating + "/10" + "<br>" + "Based on " + votes + " Votes";
             $('#metacritic').empty();

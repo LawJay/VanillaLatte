@@ -61,7 +61,7 @@ div.bottompage {
 
 .landscape-img h1 span {
   color: white;
-  font: bold 24px/45px Helvetica, Sans-Serif;
+  font-family: 'Indie Flower', cursive;
   letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
@@ -74,19 +74,19 @@ div.mainMovie {
 
 
 h2.movieTitle {
-  font-family: 'Helvetica', cursive;
+  font-family: 'Indie Flower', cursive;
   width:100%;
 }
 
 p.movieTxt {
-  font-family: 'Helvetica', cursive;
+  font-family: 'Indie Flower', cursive;
   width:100%;
   word-wrap: normal;
 
 }
 
 div.castDiv {
-  font-family: 'Helvetica', cursive;
+  font-family: 'Indie Flower', cursive;
   float: left;
   width:25%;
   margin-right: 2%;
@@ -101,7 +101,7 @@ div.mediaDiv {
 
 }
 div.reviewDiv {
-  font-family: 'Helvetica', cursive;
+  font-family: 'Indie Flower', cursive;
   width: 25%;
   float:left;
   margin-right: 2%;
@@ -181,6 +181,7 @@ div.movieBasicInfo {
     width:100%;
     word-wrap: normal;
     font-size: 12px;
+    font-family: 'Indie Flower', cursive;
   }
   h2.movieTitle {
     width:100%;

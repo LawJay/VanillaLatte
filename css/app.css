@@ -74,20 +74,24 @@ div.mainMovie {
 
 
 h2.movieTitle {
+  font-family: 'Helvetica', cursive;
   width:100%;
 }
 
 p.movieTxt {
+  font-family: 'Helvetica', cursive;
   width:100%;
   word-wrap: normal;
 
 }
 
 div.castDiv {
+  font-family: 'Helvetica', cursive;
   float: left;
   width:25%;
   margin-right: 2%;
   margin-left: 2%;
+
 }
 div.mediaDiv {
   width:25%;
@@ -97,6 +101,7 @@ div.mediaDiv {
 
 }
 div.reviewDiv {
+  font-family: 'Helvetica', cursive;
   width: 25%;
   float:left;
   margin-right: 2%;

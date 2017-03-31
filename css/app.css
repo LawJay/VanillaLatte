@@ -10,9 +10,9 @@ body {
     font-family: 'Helvetica', cursive;
     font-weight: 700;
     text-align: center;
-    background-color: #970919;
+    
     color:#928C9A;
-    background:url(Media/bg.jpg) 
+    background:url(Media/bg.jpg)
     top center no-repeat;
     background-attachment:fixed;
 }

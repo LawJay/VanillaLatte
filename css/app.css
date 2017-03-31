@@ -3,18 +3,25 @@
  * @Last modified time: 2017-03-23T10:08:51+00:00
 */
 
-
+html{
+  background-image: url('../Media/pexels-photo-27008.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-right: 5%;
+  padding-left: 5%;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 body {
     font-family: 'Helvetica', cursive;
     font-weight: 700;
     text-align: center;
-    
+
+    background-color: #970919;
+    opacity: 0.95;
     color:#928C9A;
-    background:url(Media/bg.jpg)
-    top center no-repeat;
-    background-attachment:fixed;
 }
 
 

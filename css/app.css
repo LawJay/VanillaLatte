@@ -19,7 +19,6 @@ body {
    font-family: 'Indie Flower', cursive;
     font-weight: 700;
     text-align: center;
-
     background-color: #970919;
     opacity: 0.95;
     color:#928C9A;
@@ -73,6 +72,7 @@ div.bottompage {
 
 div.mainMovie {
   width:100%;
+  opacity: 1;
 }
 
 
@@ -125,7 +125,7 @@ img.movieimg {
   border-color: #000026;
   border-width: medium;
   border-style: solid;
-
+  opacity: 0.6;
 }
 
 img.mainMovieImg {
@@ -170,7 +170,6 @@ div.movieBasicInfo {
     border-color: #000026;
     border-width: medium;
     border-style: solid;
-
   }
   img.mainMovieImg{
     width: 30%;

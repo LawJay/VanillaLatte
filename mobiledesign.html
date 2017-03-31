@@ -47,7 +47,13 @@
             $('#movieList').empty();
             //now, add in new img tags.
             var imgstring = "";
-            for (var i = 0; i < 10; i++) {
+            var limit = 10;
+            var totalResults = jsondata.totalResults;
+            if(totalResults <= 10) {
+
+              limit = totalResults;
+            }
+            for (var i = 0; i < limit; i++) {
                 var poster = jsondata.Search[i].Poster;
                 var id = jsondata.Search[i].imdbID;
                 console.log(poster);

@@ -58,22 +58,12 @@
                 var id = jsondata.Search[i].imdbID;
                 console.log(poster);
 
-                $(function() {
-                    $.ajax(poster, {
-                        statusCode: {
-                            403: function() {
-                                poster = "/Media/potato.png"
-                            }
-                        }
-                    })
-
-                });
+                //if there's no poster, use jordan's classy potato.
 
                 if (poster === "N/A") {
                     poster = "/Media/potato.png";
-                } else {
-                    console.log(poster);
                 }
+
                 imgstring += "<img src='" + poster + "'alt='/Media/potato.png'" + "class='movieimg' id='" + id + "'>";
                 //append the img string
             }

@@ -51,7 +51,7 @@ div.bottompage {
 
 .landscape-img h1 span {
   color: white;
-  font: bold 24px/45px Helvetica, Sans-Serif;
+  font: bold 24px/45px Helvetica;
   letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
@@ -189,7 +189,7 @@ div.movieBasicInfo {
 
   .landscape-img h1 span {
     color: white;
-    font: bold 24px/45px Helvetica, Sans-Serif;
+    font: bold 24px/45px Helvetica;
     letter-spacing: -1px;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);

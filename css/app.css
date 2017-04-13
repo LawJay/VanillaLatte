@@ -60,6 +60,7 @@ div.bottompage {
 
 div.mainMovie {
   width:100%;
+  opacity: 1;
 }
 
 
@@ -107,6 +108,7 @@ img.movieimg {
   border-color: #000026;
   border-width: medium;
   border-style: solid;
+  opacity: 0.6;
 
 }
 

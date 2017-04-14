@@ -115,21 +115,22 @@ img.movieimg {
   height: 100%;
   margin-left: 5px;
   margin-right: 5px;
-  border-color: #000026;
+  /*border-color: #000026;
   border-width: medium;
-  border-style: solid;
+  border-style: solid*/
   opacity: 0.6;
 
 }
 
-img.mainMovieImg {
+div.posterImage {
   width: 100%;
-  height: auto;
   margin:auto;
   float:left;
-  border-color: #D4AF37;
-  border-width: thick;
-  border-style: solid;
+  /*border-color: #D4AF37; */
+  /*border-width: thick;
+  border-style: solid;*/
+  min-width:20%
+
 }
 
 div.movieBasicInfo {
@@ -138,14 +139,19 @@ div.movieBasicInfo {
 }
 
 @media only screen and (min-width: 600px max-width: 900px) /*tablet size*/{
-  img.mainMovieImg{
-    width: 25%;
-    height: 35%;
-    margin:auto;
-    float:left;
+  #mainImg {
     border-color: #D4AF37;
     border-width: thick;
     border-style: solid;
+  }
+  div.posterImage {
+    width: 30%;
+    float:left;
+    /*border-color: #D4AF37;*/
+    /*border-width: thick;
+    border-style: solid;*/
+    min-width:20%
+
   }
 }
 
@@ -161,23 +167,27 @@ div.movieBasicInfo {
     height: 100%;
     margin-left: 5px;
     margin-right: 5px;
-    border-color: #000026;
-    border-width: medium;
-    border-style: solid;
 
   }
-  img.mainMovieImg{
-    width: 30%;
-    height: 60%;
-    float:left;
+  #mainImg {
     border-color: #D4AF37;
     border-width: thick;
     border-style: solid;
+  }
+  div.posterImage {
+    width: 30%;
+    float:left;
+    /*border-color: #D4AF37;*/
+    /*border-width: thick;
+    border-style: solid;*/
+    min-width:20%
+
   }
   p.movieTxt {
     width:100%;
     word-wrap: normal;
     font-size: 12px;
+    word-wrap:normal;
   }
   h2.movieTitle {
     width:100%;
@@ -207,14 +217,19 @@ div.movieBasicInfo {
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
   }
-  img.mainMovieImg {
-    width: 30%;
-    height: 65%;
-    margin:auto;
-    float:left;
+  #mainImg {
     border-color: #D4AF37;
     border-width: thick;
     border-style: solid;
+  }
+  div.posterImage {
+    width: 30%;
+    float:left;
+    /*border-color: #D4AF37;*/
+    /*border-width: thick;
+    border-style: solid;*/
+    min-width:20%
+
   }
 }
 
@@ -243,13 +258,19 @@ div.movieBasicInfo {
 
   }
   @media screen and (min-width: 1336px) and (max-height: 758px) {
-    img.mainMovieImg {
-      width: 30%;
-      height: 50%;
-      float:left;
+    #mainImg {
       border-color: #D4AF37;
       border-width: thick;
       border-style: solid;
+    }
+    div.posterImage {
+      width: 30%;
+      float:left;
+      /*border-color: #D4AF37;*/
+      /*border-width: thick;
+      border-style: solid;*/
+      min-width:20%
+
     }
     div.movieBasicInfo {
       width: 100%;
@@ -258,14 +279,19 @@ div.movieBasicInfo {
 
   }
   @media screen and (max-width: 1920px) and (max-height: 1080px) {
-    img.mainMovieImg {
-      width:25%;
-      height:55%;
-      margin:auto;
-      float:left;
+    #mainImg {
       border-color: #D4AF37;
       border-width: thick;
       border-style: solid;
+    }
+    div.posterImage {
+      width: 30%;
+      float:left;
+      /*border-color: #D4AF37;*/
+      /*border-width: thick;
+      border-style: solid;*/
+      min-width:20%
+
     }
     div.movieBasicInfo {
       width: 100%;

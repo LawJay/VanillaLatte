@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-03-22T12:03:20+00:00
+@Last modified time: 2017-04-21T14:50:12+01:00
 -->
 
 
@@ -24,6 +24,9 @@
     <!-- foundation javascript -->
     <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/what-input.js"></script>
+    <script src="js/konami/konami.js"></script>
+
+    </script>
     <script>
         $(function() {
             $('#search').submit(function() {
@@ -160,10 +163,14 @@
       }
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
+    </script>
+
+    <script>
+      var easter_egg = new Konami(function() { alert('Konami Code!')});
+    </script>
 </head>
 
 <body>
-
     <body background="/Media/background.jpg">
 
         <header>

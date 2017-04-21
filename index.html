@@ -92,7 +92,7 @@
         //get the title of the current image by using the imdbID from the id attribute to pull more data.
         function getTitle(id) {
             //prepare the url
-            var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short&tomatos=true"
+            var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short"
             $.getJSON(url2, function(jsondata) {
                 //handle the results.
                 changeTitle(jsondata)

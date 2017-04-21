@@ -71,7 +71,10 @@
                 //append the img string
             }
             $("#movieList").append(imgstring);
+            hover();
+            changeImg();
         }
+
     </script>
     <script>
     //function to change the image
@@ -124,7 +127,7 @@
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
-            var rottentomatoes = jsondata.Ratings.Source.Value;
+            var rottentomatoes = jsondata.Ratings;
             console.log(rottentomatoes);
             //these string prep the data in a html format.
             var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";

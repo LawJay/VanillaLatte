@@ -126,7 +126,8 @@
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
-            getRottenTomatoesReviews(title)
+            var rottentomatoes = jsondata.Ratings.Source.Value;
+            console.log(rottentomatoes);
             //these string prep the data in a html format.
             var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";
             var imdbString = "<h5>IMDB</h5>" + imdbrating + "/10" + "<br>" + "Based on " + votes + " Votes";
@@ -161,9 +162,9 @@
       function getRottenTomatoesReviews(query) {
         var rottenjson = "";
       }
+    </script>
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
-    </script>
 
     <script>
       var easter_egg = new Konami(function() { alert('Konami Code!')});

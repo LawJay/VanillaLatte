@@ -17,7 +17,7 @@ body {
 
 /* background image code */
 html{
-   background-image: url('../Media/pexels-photo-27008.jpg');
+   /*background-image: url('../Media/pexels-photo-27008.jpg');*/
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center;

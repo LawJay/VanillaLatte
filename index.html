@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-04-21T15:33:34+01:00
+@Last modified time: 2017-04-21T16:00:35+01:00
 -->
 
 
@@ -69,10 +69,10 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
                   //if there's no poster, use jordan's classy potato.
 
                   if (poster === "N/A") {
-                      poster = "/Media/potato.png";
+                      poster = "Media/easter_egg.jpg";
                   }
 
-                  imgstring += "<img src='" + poster + "'alt='/Media/potato.png'" + "class='movieimg' id='" + id + "'>";
+                  imgstring += "<img src='" + poster + "'alt='Media/easter_egg.jpg'" + "class='movieimg' id='" + id + "'>";
                   //append the img string
               }
               $("#movieList").append(imgstring);
@@ -149,11 +149,19 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             $('#year').empty();
             $('#director').empty();
             $('#awards').empty();
+            if(itseaster){
+            $('#movieTitle').append("M' Lady");
+            $('#movieTxt').append("If you want sick memes you have came to the right place darling.");
+            $('#year').append("Released in " + "1996" + ". Rated " + "PG");
+            $('#director').append("Directed by " + "Murray Lyne");
+            $('#awards').append("Awards: Them All!");
+          } else {
             $('#movieTitle').append(title);
             $('#movieTxt').append(plot);
             $('#year').append("Released in " + year + ". Rated " + rating);
             $('#director').append("Directed by " + director);
             $('#awards').append(awards);
+          }
 
             //REVIEWS
             var metascore = jsondata.Metascore;
@@ -197,10 +205,19 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
     </script>
+
+    <script>
+      if(itseaster){
+        $('html').css('background-image','url("Media/pepe.jpg")');
+      } else {
+        $('html').css('background-image','url("Media/pexels-photo-27008.jpg")');
+      }
+    </script>
+
 </head>
 
 <body>
-    <body background="/Media/background.jpg">
+  <!-- <body background="/Media/background.jpg"> -->
 
         <header>
             <img src="/Media/tatties_logo.png" alt="">

@@ -127,20 +127,34 @@
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
-            var rottentomatoes = jsondata.Ratings;
-            console.log(rottentomatoes);
-            //these string prep the data in a html format.
+            console.log(jsondata.Ratings);
+            for (var i=0; i < jsondata.Ratings.length; i++) {
+              if (jsondata.Ratings[i].Source === "Rotten Tomatoes") {
+                var rottentomatoes = jsondata.Ratings[i].Value;
+              }
+            }
+
+            if (rottentomatoes === "undefined") {
+              rottentomatoes = "No score found"
+            } else {
+              rottentomatoes.concat("%");
+            }
+
+            //these strings prep the data in a html format.
             var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";
             var imdbString = "<h5>IMDB</h5>" + imdbrating + "/10" + "<br>" + "Based on " + votes + " Votes";
+            var rottentomatoesstring = "<h5> Rotten Tomatoes </h5>" + rottentomatoes;
+
             $('#metacritic').empty();
             $('#imdb').empty();
-
+            $('#rottentomatoes').empty();
             $('#metacritic').append(metacriticString);
             $('#imdb').append(imdbString);
+            $('#rottentomatoes').append(rottentomatoesstring)
 
             //CAST
-            var notableActors = jsondata.Actors;
 
+            var notableActors = jsondata.Actors;
 
             //empty the element
 
@@ -249,8 +263,8 @@
                             <br>
                             <p id="imdb"></p>
                             <br>
-                            <ul id="reviewlist">
-                            </ul>
+                            <p id="rottentomatoes">
+
                         </div>
                     </div>
 

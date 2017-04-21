@@ -138,6 +138,22 @@
             $('#imdb').append(imdbString);
 
             //CAST
+            var notableActors = jsondata.Actors;
+
+
+            //empty the element
+
+            $('#actorslist').empty();
+
+            //add in the new actors, but split the data if possible.
+
+            var actors = notableActors.split(",");
+
+            for(var i = 0; i < actors.length; i++) {
+              $('#actorslist').append("<li> " actors[i] + "</li>")
+            }
+
+
         }
         changeImg(); //reload the function
     </script>
@@ -156,12 +172,6 @@
             });
         }
         hover(); //reload the function
-    </script>
-
-    <script>
-      function getRottenTomatoesReviews(query) {
-        var rottenjson = "";
-      }
     </script>
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
@@ -223,7 +233,10 @@
                     <div class="castDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 cast">
                             <h2> Cast </h2>
-                            <p>Cast text</p>
+                          <div id="actors">
+                            <ul id="actorslist">
+                            </ul>
+                          </div>
                         </div>
                     </div>
 

@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-04-21T14:50:12+01:00
+@Last modified time: 2017-04-21T15:33:34+01:00
 -->
 
 
@@ -45,11 +45,43 @@
                 changePosters(jsondata)
             });
         }
+var itseaster = false;
+var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true;});
 
         function changePosters(jsondata) {
             //clear out all the img tags in movieList
             $('#movieList').empty();
             //now, add in new img tags.
+
+
+            if (itseaster){
+              var imgstring = "";
+              var limit = 10;
+              var totalResults = jsondata.totalResults;
+              if(totalResults <= 10) {
+
+                limit = totalResults;
+              }
+              for (var i = 0; i < limit; i++) {
+                  var poster = "Media/easter_egg.jpg";
+                  var id = jsondata.Search[i].imdbID;
+
+                  //if there's no poster, use jordan's classy potato.
+
+                  if (poster === "N/A") {
+                      poster = "/Media/potato.png";
+                  }
+
+                  imgstring += "<img src='" + poster + "'alt='/Media/potato.png'" + "class='movieimg' id='" + id + "'>";
+                  //append the img string
+              }
+              $("#movieList").append(imgstring);
+              hover();
+              changeImg();
+            }
+            else
+            {
+
             var imgstring = "";
             var limit = 10;
             var totalResults = jsondata.totalResults;
@@ -73,6 +105,7 @@
             $("#movieList").append(imgstring);
             hover();
             changeImg();
+          }
         }
     </script>
     <script>
@@ -163,10 +196,6 @@
       }
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
-    </script>
-
-    <script>
-      var easter_egg = new Konami(function() { alert('Konami Code!')});
     </script>
 </head>
 

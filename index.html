@@ -8,18 +8,20 @@
 <html>
 
 <head>
-    <title>Rotten Tatties Mobile Design</title>
+    <title>Rotten Tatties Movie lookup </title>
     <meta charset="utf-8">
     <meta name="Author" content="Murray Lyne, Jamie Law, Jordan youngman, Joe 'ma bobby' MacDonald">
-    <meta name="Desciption" content="Mobile orientated design.
-  This is part of mobile first design">
+    <meta name="Desciption" content="This is our website!">
+  <!-- foundation css framework reference -->
     <link rel="stylesheet" href="css/foundation.css">
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- personal css -->
     <link rel="stylesheet" href="css/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<script src="js/vendor/jquery.js"></script>-->
+    <!--jquery-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <!-- foundation javascript -->
     <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script>
@@ -37,7 +39,6 @@
             var url = "http://www.omdbapi.com/?s=" + query + "&type=movie";
             $.getJSON(url, function(jsondata) {
                 //handle what we've found.
-                console.log(jsondata);
                 changePosters(jsondata)
             });
         }
@@ -56,7 +57,6 @@
             for (var i = 0; i < limit; i++) {
                 var poster = jsondata.Search[i].Poster;
                 var id = jsondata.Search[i].imdbID;
-                console.log(poster);
 
                 //if there's no poster, use jordan's classy potato.
 
@@ -123,7 +123,7 @@
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
-
+            getRottenTomatoesReviews(title)
             //these string prep the data in a html format.
             var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";
             var imdbString = "<h5>IMDB</h5>" + imdbrating + "/10" + "<br>" + "Based on " + votes + " Votes";
@@ -154,6 +154,10 @@
         hover(); //reload the function
     </script>
 
+    <script>
+      function getRottenTomatoesReviews(query) {
+        var rottenjson = "";
+      }
 
     <link rel="icon" type="image/png" href="Media/favicon.png">
 </head>

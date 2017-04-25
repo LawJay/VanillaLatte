@@ -58,6 +58,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
 
             if (itseaster){
               $('html').css('background-image','url(Media/pepe.jpg)');
+              $('#title').attr('src','/Media/easter_egg_2.png')
               var audio = new Audio('/Media/sfx/meme.mp3');
               audio.play();
               var imgstring = "";
@@ -121,6 +122,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
                     var currentimage = $(this).attr('src');
                     var imdbID = $(this).attr('id');
                     $('#mainImg').attr('src', currentimage);
+
                     //get the plot and title from what the id embedded on the img's id attribute.
                     getTitle(imdbID)
                 });
@@ -154,13 +156,17 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             $('#year').empty();
             $('#director').empty();
             $('#awards').empty();
+
             if(itseaster){
+
             $('#movieTitle').append("M' Lady");
             $('#movieTxt').append("If you want sick memes you have came to the right place darling.");
             $('#year').append("Released in " + "1996" + ". Rated " + "PG");
             $('#director').append("Directed by " + "Murray Lyne");
             $('#awards').append("Awards: Them All!");
+
           } else {
+
             $('#movieTitle').append(title);
             $('#movieTxt').append(plot);
             $('#year').append("Released in " + year + ". Rated " + rating);
@@ -174,19 +180,26 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             var imdbrating = "10";
             var votes = "1,000,000";
             console.log(jsondata.Ratings);
+
             for (var i=0; i < jsondata.Ratings.length; i++) {
+
               if (jsondata.Ratings[i].Source === "Rotten Tomatoes") {
+
                 var rottentomatoes = "100%";
               }
             }
           } else {
+
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
             var rottentomatoes = "";
             console.log(jsondata.Ratings);
+
             for (var i=0; i < jsondata.Ratings.length; i++) {
+
               if (jsondata.Ratings[i].Source === "Rotten Tomatoes") {
+
                 rottentomatoes = jsondata.Ratings[i].Value;
               }
             }
@@ -259,7 +272,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
   <!-- <body background="/Media/background.jpg"> -->
 
         <header>
-            <img src="/Media/tatties_logo.png" alt="">
+            <img src="/Media/tatties_logo.png" alt="Title" id="title">
             <form id="search">
                 <div class="SearchBar">
                     <input type="search" placeholder="Enter Search Query Here..." id="searchbar" class="search"></search>
@@ -273,15 +286,6 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
                 <div class="movieList large-8 small-3 medium-5" id="movieList">
                 </div>
             </div>
-
-            <div class="row">
-                <h2 class="test"></h2>
-                <div class="landscape-img">
-                    <img src="http://myfantasyart.com/wp-content/uploads/2013/07/pacific-rim-movie-poster-images-f4-1400x643.jpg" alt="Movie poster">
-                    <h1><span>
-                      Movie Title
-                    </span></h1>
-                </div>
 
                 <div class="mainMovie large-8 small-3 medium-5">
 

@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-04-25T14:43:01+01:00
+@Last modified time: 2017-04-25T14:48:18+01:00
 -->
 
 
@@ -169,6 +169,17 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
           }
 
             //REVIEWS
+            if(itseaster){
+            var metascore = "100";
+            var imdbrating = "10";
+            var votes = "1,000,000";
+            console.log(jsondata.Ratings);
+            for (var i=0; i < jsondata.Ratings.length; i++) {
+              if (jsondata.Ratings[i].Source === "Rotten Tomatoes") {
+                var rottentomatoes = "100%";
+              }
+            }
+          } else {
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
@@ -178,6 +189,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
                 var rottentomatoes = jsondata.Ratings[i].Value;
               }
             }
+          }
 
             if (rottentomatoes === "undefined") {
               rottentomatoes = "No score found"

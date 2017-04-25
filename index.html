@@ -111,6 +111,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             changeImg();
           }
         }
+
     </script>
     <script>
     //function to change the image
@@ -128,7 +129,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
         //get the title of the current image by using the imdbID from the id attribute to pull more data.
         function getTitle(id) {
             //prepare the url
-            var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short&tomatos=true"
+            var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short"
             $.getJSON(url2, function(jsondata) {
                 //handle the results.
                 changeTitle(jsondata)
@@ -171,17 +172,48 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
-            getRottenTomatoesReviews(title)
-            //these string prep the data in a html format.
+            console.log(jsondata.Ratings);
+            for (var i=0; i < jsondata.Ratings.length; i++) {
+              if (jsondata.Ratings[i].Source === "Rotten Tomatoes") {
+                var rottentomatoes = jsondata.Ratings[i].Value;
+              }
+            }
+
+            if (rottentomatoes === "undefined") {
+              rottentomatoes = "No score found"
+            } else {
+              rottentomatoes.concat("%");
+            }
+
+            //these strings prep the data in a html format.
             var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";
             var imdbString = "<h5>IMDB</h5>" + imdbrating + "/10" + "<br>" + "Based on " + votes + " Votes";
+            var rottentomatoesstring = "<h5> Rotten Tomatoes </h5>" + rottentomatoes;
+
             $('#metacritic').empty();
             $('#imdb').empty();
-
+            $('#rottentomatoes').empty();
             $('#metacritic').append(metacriticString);
             $('#imdb').append(imdbString);
+            $('#rottentomatoes').append(rottentomatoesstring)
 
             //CAST
+
+            var notableActors = jsondata.Actors;
+
+            //empty the element
+
+            $('#actorslist').empty();
+
+            //add in the new actors, but split the data if possible.
+
+            var actors = notableActors.split(",");
+
+            for(var i = 0; i < actors.length; i++) {
+              $('#actorslist').append("<li> " + actors[i] + "</li>");
+            }
+
+
         }
         changeImg(); //reload the function
     </script>
@@ -202,13 +234,7 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
         hover(); //reload the function
     </script>
 
-    <script>
-      function getRottenTomatoesReviews(query) {
-        var rottenjson = "";
-      }
-
     <link rel="icon" type="image/png" href="Media/favicon.png">
-    </script>
 
     <script>
 
@@ -267,18 +293,14 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
 
                     <div class="castDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 cast">
-                            <h2> Cast </h2>
-                            <p>Cast text</p>
+                            <h2> Notable actors </h2>
+                          <div id="actors">
+                            <ul id="actorslist">
+                            </ul>
+                          </div>
                         </div>
                     </div>
 
-                    <div class="mediaDiv"font-family: 'Indie Flower', cursive;>
-                        <div class="large-8 small-3 medium-5 media">
-
-                            <h2> Media </h2>
-                            <p>Media text</p>
-                        </div>
-                    </div>
                     <div class="reviewDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 movieReviews">
 
@@ -287,8 +309,8 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
                             <br>
                             <p id="imdb"></p>
                             <br>
-                            <ul id="reviewlist">
-                            </ul>
+                            <p id="rottentomatoes">
+
                         </div>
                     </div>
 

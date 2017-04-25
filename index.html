@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-04-25T14:33:51+01:00
+@Last modified time: 2017-04-25T14:43:01+01:00
 -->
 
 
@@ -198,17 +198,17 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             $('#rottentomatoes').append(rottentomatoesstring)
 
             //CAST
-
+            if (itseaster) {
+              var notableActors = "Murray Lyne";
+            } else {
             var notableActors = jsondata.Actors;
+          }
 
             //empty the element
-
             $('#actorslist').empty();
 
             //add in the new actors, but split the data if possible.
-
             var actors = notableActors.split(",");
-
             for(var i = 0; i < actors.length; i++) {
               $('#actorslist').append("<li> " + actors[i] + "</li>");
             }

@@ -183,10 +183,11 @@ var easter_egg = new Konami(function() { alert('Konami Code!'); itseaster = true
             var metascore = jsondata.Metascore;
             var imdbrating = jsondata.imdbRating;
             var votes = jsondata.imdbVotes;
+            var rottentomatoes = "";
             console.log(jsondata.Ratings);
             for (var i=0; i < jsondata.Ratings.length; i++) {
               if (jsondata.Ratings[i].Source === "Rotten Tomatoes") {
-                var rottentomatoes = jsondata.Ratings[i].Value;
+                rottentomatoes = jsondata.Ratings[i].Value;
               }
             }
           }

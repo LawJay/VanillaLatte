@@ -93,18 +93,11 @@ div.castDiv {
   margin-right: 2%;
   margin-left: 2%;
 }
-/* media content goes here */
-div.mediaDiv {
-  width:25%;
-  float:left;
-  margin-right: 2%;
-  margin-left: 2%;
 
-}
 /* segment that displays where the reviews */
 div.reviewDiv {
   width: 25%;
-  float:left;
+  float:right;
   margin-right: 2%;
   margin-left: 2%;
 }

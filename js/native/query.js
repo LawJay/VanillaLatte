@@ -171,7 +171,7 @@ function changePosters(jsondata) {
         }
       }
 
-        if (rottentomatoes === "undefined") {
+        if (rottentomatoes === undefined) {
           rottentomatoes = "No score found"
         } else {
           rottentomatoes.concat("%");

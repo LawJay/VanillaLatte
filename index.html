@@ -1,6 +1,6 @@
 <!--
 @Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-04-25T14:48:18+01:00
+@Last modified time: 2017-04-21T14:50:12+01:00
 -->
 
 
@@ -9,8 +9,9 @@
 
 <head>
     <title>Rotten Tatties Movie lookup </title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="Author" content="Murray Lyne, Jamie Law, Jordan youngman, Joe McDonald">
+    <meta name="Author" content="Murray Lyne, Jamie Law, Jordan youngman, Joe 'ma bobby' MacDonald">
     <meta name="Desciption" content="This is our website!">
   <!-- foundation css framework reference -->
     <link rel="stylesheet" href="css/foundation.css">
@@ -25,24 +26,156 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/konami/konami.js"></script>
-    <!-- handles the searching -->
-    <script src="/js/native/query.js"></script>
-    <!-- hovering -->
-    <script src="/js/native/hover.js"></script>
-
-    <link rel="icon" type="image/png" href="Media/favicon.png">
-
-    <script>
 
     </script>
+    <script>
+        $(function() {
+            $('#search').submit(function() {
+                var query = $("#searchbar").val();
+                getMovies(query);
+                return false;
+            });
+        });
 
+        //get an array of movies
+
+        function getMovies(query) {
+            var url = "http://www.omdbapi.com/?s=" + query + "&type=movie";
+            $.getJSON(url, function(jsondata) {
+                //handle what we've found.
+                changePosters(jsondata)
+            });
+        }
+
+        function changePosters(jsondata) {
+            //clear out all the img tags in movieList
+            $('#movieList').empty();
+            //now, add in new img tags.
+            var imgstring = "";
+            var limit = 10;
+            var totalResults = jsondata.totalResults;
+            if(totalResults <= 10) {
+
+              limit = totalResults;
+            }
+            for (var i = 0; i < limit; i++) {
+                var poster = jsondata.Search[i].Poster;
+                var id = jsondata.Search[i].imdbID;
+
+                //if there's no poster, use jordan's classy potato.
+
+                if (poster === "N/A") {
+                    poster = "/Media/potato.png";
+                }
+
+                imgstring += "<img src='" + poster + "'alt='/Media/potato.png'" + "class='movieimg' id='" + id + "'>";
+                //append the img string
+            }
+            $("#movieList").append(imgstring);
+            hover();
+            changeImg();
+        }
+    </script>
+    <script>
+    //function to change the image
+        function changeImg() {
+            $(document).ready(function() {
+                $('.movieimg').click(function() {
+                    var currentimage = $(this).attr('src');
+                    var imdbID = $(this).attr('id');
+                    $('#mainImg').attr('src', currentimage);
+                    //get the plot and title from what the id embedded on the img's id attribute.
+                    getTitle(imdbID)
+                });
+            });
+        }
+        //get the title of the current image by using the imdbID from the id attribute to pull more data.
+        function getTitle(id) {
+            //prepare the url
+            var url2 = "http://www.omdbapi.com/?i=" + id + "&plot=short&tomatos=true"
+            $.getJSON(url2, function(jsondata) {
+                //handle the results.
+                changeTitle(jsondata)
+            });
+        }
+
+        function changeTitle(jsondata) {
+            //clear the old out. we'll add it back in.
+            var title = jsondata.Title;
+            var plot = jsondata.Plot;
+            var director = jsondata.Director;
+            var awards = jsondata.Awards;
+            var year = jsondata.Year;
+            var rating = jsondata.Rated;
+
+            if(awards === "N/A") {
+              awards = "No awards";
+            }
+            //add in the information after clearing the html of the old tags
+            $('#movieTitle').empty();
+            $('#movieTxt').empty();
+            $('#year').empty();
+            $('#director').empty();
+            $('#awards').empty();
+            $('#movieTitle').append(title);
+            $('#movieTxt').append(plot);
+            $('#year').append("Released in " + year + ". Rated " + rating);
+            $('#director').append("Directed by " + director);
+            $('#awards').append(awards);
+
+            //REVIEWS
+            var metascore = jsondata.Metascore;
+            var imdbrating = jsondata.imdbRating;
+            var votes = jsondata.imdbVotes;
+            getRottenTomatoesReviews(title)
+            //these string prep the data in a html format.
+            var metacriticString = "<h5>MetaCritc </h5>" + metascore + " of 100";
+            var imdbString = "<h5>IMDB</h5>" + imdbrating + "/10" + "<br>" + "Based on " + votes + " Votes";
+            $('#metacritic').empty();
+            $('#imdb').empty();
+
+            $('#metacritic').append(metacriticString);
+            $('#imdb').append(imdbString);
+
+            //CAST
+        }
+        changeImg(); //reload the function
+    </script>
+
+    <script>
+    //When you hover over an image, it will lose it's opacity.
+        function hover() {
+            $(document).ready(function() {
+                $('.movieimg').hover(function() {
+                    $(this).css('border-color', '#D4AF37')
+                    $(this).css('opacity', '1')
+                }, function() {
+                    $(this).css('border-color', '#000026')
+                    $(this).css('opacity', '0.6')
+                });
+            });
+        }
+        hover(); //reload the function
+    </script>
+
+    <script>
+      function getRottenTomatoesReviews(query) {
+        var rottenjson = "";
+      }
+
+    <link rel="icon" type="image/png" href="Media/favicon.png">
+    </script>
+
+    <script>
+      var easter_egg = new Konami(function() { alert('Konami Code!')});
+    </script>
 </head>
 
 <body>
-  <!-- <body background="/Media/background.jpg"> -->
+    <body background="/Media/background.jpg">
 
         <header>
-            <img src="/Media/tatties_logo.png" alt="Title" id="title">
+            <img src="/Media/tatties_logo.png" alt="">
             <form id="search">
                 <div class="SearchBar">
                     <input type="search" placeholder="Enter Search Query Here..." id="searchbar" class="search"></search>
@@ -56,6 +189,15 @@
                 <div class="movieList large-8 small-3 medium-5" id="movieList">
                 </div>
             </div>
+
+            <div class="row">
+                <h2 class="test"></h2>
+                <div class="landscape-img">
+                    <img src="http://myfantasyart.com/wp-content/uploads/2013/07/pacific-rim-movie-poster-images-f4-1400x643.jpg" alt="Movie poster">
+                    <h1><span>
+                      Movie Title
+                    </span></h1>
+                </div>
 
                 <div class="mainMovie large-8 small-3 medium-5">
 
@@ -76,27 +218,22 @@
             <div class="bottompage">
                 <div class="row">
 
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
+
 
                     <div class="castDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 cast">
-                            <h2> Notable actors </h2>
-                          <div id="actors">
-                            <ul id="actorslist">
-                            </ul>
-                          </div>
+                            <h2> Cast </h2>
+                            <p>Cast text</p>
                         </div>
                     </div>
 
+                    <div class="mediaDiv"font-family: 'Indie Flower', cursive;>
+                        <div class="large-8 small-3 medium-5 media">
+
+                            <h2> Media </h2>
+                            <p>Media text</p>
+                        </div>
+                    </div>
                     <div class="reviewDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 movieReviews">
 
@@ -105,8 +242,8 @@
                             <br>
                             <p id="imdb"></p>
                             <br>
-                            <p id="rottentomatoes">
-
+                            <ul id="reviewlist">
+                            </ul>
                         </div>
                     </div>
 

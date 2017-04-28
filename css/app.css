@@ -93,6 +93,8 @@ div.castDiv {
   width:25%;
   margin-right: 2%;
   margin-left: 2%;
+  color: #D4AF37;
+  font-family: 'Baloo', cursive;
 }
 
 /* segment that displays where the reviews */
@@ -100,7 +102,9 @@ div.reviewDiv {
   width: 25%;
   float:right;
   margin-right: 2%;
-  margin-left: 2%;
+  margin-left: 2
+  color: #D4AF37;
+  font-family: 'Baloo', cursive;
 }
 /* this is for the search bar, it's margins are automatic */
 input.search {

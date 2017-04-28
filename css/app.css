@@ -13,7 +13,7 @@ body {
     background-color: #970919;
     opacity: 0.95;
     color: #FFD700;
-    font-family: 'Baloo', cursive;
+    font-family: 'Cambria', cursive;
 }
 
 /* background image code */
@@ -81,14 +81,14 @@ div.mainMovie {
 h2.movieTitle {
   width:100%;
   color: #FFD700;
-  font-family: 'Baloo', cursive;
+  font-family: 'Cambria', cursive;
 }
 /* this is the description of the move */
 p.movieTxt {
   width:100%;
   word-wrap: normal;
   color: #FFD700;
-  font-family: 'Baloo', cursive;
+  font-family: 'Cambria', cursive;
 
 }
 /* Cast information goes here, on the left */
@@ -98,7 +98,7 @@ div.castDiv {
   margin-right: 2%;
   margin-left: 2%;
   color: #FFD700;
-  font-family: 'Baloo', cursive;
+  font-family: 'Cambria', cursive;
 }
 
 /* segment that displays where the reviews */
@@ -108,7 +108,7 @@ div.reviewDiv {
   margin-right: 2%;
   margin-left: 2%;
   color: #FFD700;
-  font-family: 'Baloo', cursive;
+  font-family: 'Cambria', cursive;
 }
 /* this is for the search bar, it's margins are automatic */
 input.search {
@@ -146,7 +146,7 @@ div.movieBasicInfo {
   width: 100%;
   height: 100%;
   color: #FFD700;
-  font-family: 'Baloo', cursive;
+  font-family: 'Cambria', cursive;
 }
 
 @media only screen and (min-width: 600px max-width: 900px) /*tablet size*/{

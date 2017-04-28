@@ -1,52 +1,40 @@
-<!--
-@Date:   2017-03-10T13:44:54+00:00
-@Last modified time: 2017-04-21T14:50:12+01:00
--->
-
-
-
 <html>
 
 <head>
     <title>Rotten Tatties Movie lookup </title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="Author" content="Murray Lyne, Jamie Law, Jordan youngman, Joe McDonald">
+    <meta name="Desciption" content="This is our website!">
+  <!-- foundation css framework reference -->
+    <link rel="stylesheet" href="css/foundation.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- personal css -->
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--jquery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <!-- foundation javascript -->
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/konami/konami.js"></script>
+    <!-- handles the searching -->
+    <script src="/js/native/query.js"></script>
+    <!-- hovering -->
+    <script src="/js/native/hover.js"></script>
 
+    <link rel="icon" type="image/png" href="Media/favicon.png">
 
-        <meta charset="utf-8">
-        <meta name="Author" content="Murray Lyne, Jamie Law, Jordan youngman, Joe McDonald">
-        <meta name="Desciption" content="This is our website!">
-      <!-- foundation css framework reference -->
-        <link rel="stylesheet" href="css/foundation.css">
-        <meta name="viewport" content="width=device-width">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- personal css -->
-        <link rel="stylesheet" href="css/app.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--jquery-->
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-        <!-- foundation javascript -->
-        <script src="js/vendor/foundation.js"></script>
-        <script src="js/vendor/what-input.js"></script>
-        <script src="js/konami/konami.js"></script>
-        <!-- handles the searching -->
-        <script src="/js/native/query.js"></script>
-        <!-- hovering -->
-        <script src="/js/native/hover.js"></script>
-
-        <link rel="icon" type="image/png" href="Media/favicon.png">
-
-        <script>
-        </script>
-
-    
+    <script>
+    </script>
 
 </head>
 
 <body>
-    <body background="/Media/background.jpg">
+  <!-- <body background="/Media/background.jpg"> -->
 
         <header>
-            <img src="/Media/tatties_logo.png" alt="">
+            <img src="/Media/tatties_logo.png" alt="Title" id="title">
             <form id="search">
                 <div class="SearchBar">
                     <input type="search" placeholder="Enter Search Query Here..." id="searchbar" class="search"></search>
@@ -60,15 +48,6 @@
                 <div class="movieList large-8 small-3 medium-5" id="movieList">
                 </div>
             </div>
-
-            <div class="row">
-                <h2 class="test"></h2>
-                <div class="landscape-img">
-                    <img src="http://myfantasyart.com/wp-content/uploads/2013/07/pacific-rim-movie-poster-images-f4-1400x643.jpg" alt="Movie poster">
-                    <h1><span>
-                      Movie Title
-                    </span></h1>
-                </div>
 
                 <div class="mainMovie large-8 small-3 medium-5">
 
@@ -89,22 +68,27 @@
             <div class="bottompage">
                 <div class="row">
 
-
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
 
                     <div class="castDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 cast">
-                            <h2> Cast </h2>
-                            <p>Cast text</p>
+                            <h2> Notable actors </h2>
+                          <div id="actors">
+                            <ul id="actorslist">
+                            </ul>
+                          </div>
                         </div>
                     </div>
 
-                    <div class="mediaDiv"font-family: 'Indie Flower', cursive;>
-                        <div class="large-8 small-3 medium-5 media">
-
-                            <h2> Media </h2>
-                            <p>Media text</p>
-                        </div>
-                    </div>
                     <div class="reviewDiv"font-family: 'Indie Flower', cursive;>
                         <div class="large-8 small-3 medium-5 movieReviews">
 
@@ -113,8 +97,8 @@
                             <br>
                             <p id="imdb"></p>
                             <br>
-                            <ul id="reviewlist">
-                            </ul>
+                            <p id="rottentomatoes">
+
                         </div>
                     </div>
 

@@ -7,12 +7,13 @@
 
 /* font definitions go here */
 body {
-    font-family: 'Helvetica', cursive;
+
     font-weight: 700;
     text-align: center;
     background-color: #970919;
     opacity: 0.95;
-    color:#928C9A;
+    color: #D4AF37;
+    font-family: 'Baloo', cursive;
 }
 
 /* background image code */

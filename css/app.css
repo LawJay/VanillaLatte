@@ -7,13 +7,12 @@
 
 /* font definitions go here */
 body {
-
+    font-family: 'Helvetica', cursive;
     font-weight: 700;
     text-align: center;
     background-color: #970919;
     opacity: 0.95;
-    color: #D4AF37;
-    font-family: 'Baloo', cursive;
+    color:#928C9A;
 }
 
 /* background image code */
@@ -93,8 +92,6 @@ div.castDiv {
   width:25%;
   margin-right: 2%;
   margin-left: 2%;
-  color: #D4AF37;
-  font-family: 'Baloo', cursive;
 }
 
 /* segment that displays where the reviews */
@@ -102,9 +99,7 @@ div.reviewDiv {
   width: 25%;
   float:right;
   margin-right: 2%;
-  margin-left: 2
-  color: #D4AF37;
-  font-family: 'Baloo', cursive;
+  margin-left: 2%;
 }
 /* this is for the search bar, it's margins are automatic */
 input.search {
